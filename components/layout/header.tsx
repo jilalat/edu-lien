@@ -53,7 +53,7 @@ export function Header({ lang }: { lang: string }) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav className="container h-16 flex items-center justify-between">
+      <nav className="container h-16 flex items-center justify-between mx-auto">
         <Link href={`/${lang}`} className="flex items-center space-x-2">
           <Globe2 className="h-6 w-6" />
           <span className="font-bold text-lg">EduLien</span>

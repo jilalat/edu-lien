@@ -29,7 +29,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ dict }: HeroSectionProps) {
   return (
-    <section className="relative py-20">
+    <section className="relative">
       <div className="container">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
           <div className="flex flex-col justify-center space-y-4">
