@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import { Header } from '@/components/layout/header';
 import { Providers } from '../providers';
+import { Toaster } from '@/components/ui/toaster';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -23,8 +24,8 @@ export default function RootLayout({
   params: { lang: string };
 }) {
   return (
-    <html lang={params.lang}>
-      <body className={inter.className}>
+    <html lang={params.lang} suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
         <Providers>
           <div className="flex min-h-screen flex-col">
             <Header lang={params.lang} />
@@ -45,6 +46,7 @@ export default function RootLayout({
               </div>
             </footer>
           </div>
+          <Toaster />
         </Providers>
       </body>
     </html>
