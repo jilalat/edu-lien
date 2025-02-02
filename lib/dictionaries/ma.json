@@ -1,0 +1,33 @@
+{
+  "home": {
+    "hero": {
+      "title": "مرحبا بيك في EduLien",
+      "description": "منصة التعليم ديالك لي كتربط الناس بلا حدود",
+      "cta": "بدا دابا"
+    },
+    "loginForm": {
+      "title": "تسجيل الدخول",
+      "description": "دخل للحساب ديالك",
+      "usernamePlaceholder": "اسم المستخدم",
+      "passwordPlaceholder": "كلمة السر",
+      "submit": "دخول"
+    },
+    "features": {
+      "title": "المميزات",
+      "items": [
+        {
+          "title": "تعلم مخصص",
+          "description": "دروس متناسبة مع احتياجاتك"
+        },
+        {
+          "title": "تعاون عالمي",
+          "description": "تواصل مع متعلمين من جميع أنحاء العالم"
+        },
+        {
+          "title": "موارد غنية",
+          "description": "ولوج لمكتبة متنوعة من المحتوى"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "home": {
+    "hero": {
+      "title": "مرحباً بك في EduLien",
+      "description": "منصتك التعليمية المتصلة للتعلم بدون حدود",
+      "cta": "ابدأ الآن"
+    },
+    "loginForm": {
+      "title": "تسجيل الدخول",
+      "description": "الدخول إلى حسابك",
+      "usernamePlaceholder": "اسم المستخدم",
+      "passwordPlaceholder": "كلمة المرور",
+      "submit": "دخول"
+    },
+    "features": {
+      "title": "المميزات",
+      "items": [
+        {
+          "title": "تعلم مخصص",
+          "description": "مسارات مكيفة حسب احتياجاتك"
+        },
+        {
+          "title": "تعاون عالمي",
+          "description": "تواصل مع متعلمين من جميع أنحاء العالم"
+        },
+        {
+          "title": "موارد غنية",
+          "description": "الوصول إلى مكتبة متنوعة من المحتوى"
+        }
+      ]
+    }
+  }
+}

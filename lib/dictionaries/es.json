@@ -1,0 +1,33 @@
+{
+  "home": {
+    "hero": {
+      "title": "Bienvenido a EduLien",
+      "description": "Tu plataforma educativa conectada para aprender sin fronteras",
+      "cta": "Comenzar"
+    },
+    "loginForm": {
+      "title": "Iniciar sesión",
+      "description": "Accede a tu cuenta",
+      "usernamePlaceholder": "Usuario",
+      "passwordPlaceholder": "Contraseña",
+      "submit": "Entrar"
+    },
+    "features": {
+      "title": "Características",
+      "items": [
+        {
+          "title": "Aprendizaje personalizado",
+          "description": "Rutas adaptadas a tus necesidades"
+        },
+        {
+          "title": "Colaboración global",
+          "description": "Conéctate con estudiantes de todo el mundo"
+        },
+        {
+          "title": "Recursos abundantes",
+          "description": "Accede a una biblioteca diversa de contenido"
+        }
+      ]
+    }
+  }
+}

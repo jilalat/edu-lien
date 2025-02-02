@@ -1,0 +1,33 @@
+{
+  "home": {
+    "hero": {
+      "title": "Welcome to EduLien",
+      "description": "Your connected educational platform for learning without borders",
+      "cta": "Get Started"
+    },
+    "loginForm": {
+      "title": "Login",
+      "description": "Sign in to your account",
+      "usernamePlaceholder": "Username",
+      "passwordPlaceholder": "Password",
+      "submit": "Sign in"
+    },
+    "features": {
+      "title": "Features",
+      "items": [
+        {
+          "title": "Personalized Learning",
+          "description": "Paths adapted to your needs"
+        },
+        {
+          "title": "Global Collaboration",
+          "description": "Connect with learners worldwide"
+        },
+        {
+          "title": "Rich Resources",
+          "description": "Access a diverse library of content"
+        }
+      ]
+    }
+  }
+}
