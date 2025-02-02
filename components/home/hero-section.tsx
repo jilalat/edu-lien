@@ -39,7 +39,7 @@ export function HeroSection({ dict }: HeroSectionProps) {
             <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
               {dict.hero.description}
             </p>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+            <div className="flex flex-col gap-2 min-[400px]:flex-row no-rtl">
               <Button size="lg">{dict.hero.cta}</Button>
             </div>
           </div>

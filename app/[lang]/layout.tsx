@@ -16,22 +16,26 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function RootLayout({
+const rtlLanguages = ['ar', 'ma'];
+
+export default function LangLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { lang: string };
 }) {
+  const isRtl = rtlLanguages.includes(params.lang);
+
   return (
-    <html lang={params.lang} suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
-        <Providers>
-          <div className="flex min-h-screen flex-col">
+    <html lang={params.lang} dir={isRtl ? 'rtl' : 'ltr'} suppressHydrationWarning>
+      <body className={`${inter.className} antialiased`} suppressHydrationWarning>
+        <Providers defaultTheme="system" enableSystem>
+          <div className="relative min-h-screen flex flex-col">
             <Header lang={params.lang} />
-            <main className="flex-1">{children}</main>
-            <footer className="border-t">
-              <div className="container py-8">
+            <main className="flex-1 container mx-auto px-4 py-8">{children}</main>
+            <footer className="border-t bg-background">
+              <div className="container mx-auto px-4 py-8">
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
                   <div>
                     <h3 className="text-lg font-semibold">EduLien</h3>

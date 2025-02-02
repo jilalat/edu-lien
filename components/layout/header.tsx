@@ -53,27 +53,28 @@ export function Header({ lang }: { lang: string }) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav className="container flex h-16 items-center justify-between">
+      <nav className="container h-16 flex items-center justify-between">
         <Link href={`/${lang}`} className="flex items-center space-x-2">
           <Globe2 className="h-6 w-6" />
-          <span className="font-bold">EduLien</span>
+          <span className="font-bold text-lg">EduLien</span>
         </Link>
 
         <div className="flex items-center gap-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="rounded-full">
                 <Globe2 className="h-5 w-5" />
                 <span className="sr-only">Change language</span>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent align="end" className="w-48">
               {languages.map(language => (
                 <DropdownMenuItem
                   key={language.code}
                   onClick={() => handleLanguageChange(language.code)}
+                  className="cursor-pointer"
                 >
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 w-full">
                     <Image
                       src={language.flag}
                       alt={language.name}
@@ -91,6 +92,7 @@ export function Header({ lang }: { lang: string }) {
           <Button
             variant="ghost"
             size="icon"
+            className="rounded-full"
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           >
             <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
