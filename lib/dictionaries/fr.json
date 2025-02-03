@@ -1,6 +1,6 @@
 {
   "header": {
-    "home": "home Page",
+    "home": "Accueil",
     "languageSelection": "Sélectionner la langue",
     "login": "Accéder à mon espace",
     "theme": {
@@ -13,13 +13,6 @@
     "credits": "Soigneusement conçu par"
   },
   "homePage": {
-    "loginForm": {
-      "title": "Connexion",
-      "description": "Connectez-vous à votre compte",
-      "usernamePlaceholder": "Nom d'utilisateur",
-      "passwordPlaceholder": "Mot de passe",
-      "submit": "Se connecter"
-    },
     "features": {
       "title": "Fonctionnalités",
       "items": [
@@ -28,8 +21,8 @@
           "description": "Des parcours adaptés à vos besoins"
         },
         {
-          "title": "Apprentissage",
-          "description": "Des parcours besoins"
+          "title": "Apprentissage intelligent",
+          "description": "Recommandations d'apprentissage par IA"
         },
         {
           "title": "Collaboration mondiale",
@@ -46,12 +39,48 @@
     "welcomeMessage": "Bienvenue dans votre espace privé",
     "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
     "form": {
-      "title": "تسجيل الدخول",
-      "description": "الدخول إلى حسابك",
-      "usernameLabel": "Login",
+      "title": "Connexion",
+      "description": "Connectez-vous à votre compte",
+      "usernameLabel": "Email",
       "passwordLabel": "Mot de passe",
-      "rememberMe": "Garder ma session active",
-      "submitButton": "CONNEXION"
+      "rememberMe": "Rester connecté",
+      "submitButton": "SE CONNECTER"
+    }
+  },
+  "schoolPage": {
+    "welcomeMessage": "Tableau de bord de l'école",
+    "description": "Gérez votre école efficacement",
+    "sections": {
+      "userManagement": "Gestion des utilisateurs",
+      "analytics": "Analyses du système",
+      "settings": "Paramètres"
+    }
+  },
+  "teacherPage": {
+    "welcomeMessage": "Tableau de bord de l'enseignant",
+    "description": "Gérez vos classes et vos élèves",
+    "sections": {
+      "classes": "Mes classes",
+      "progress": "Progrès des élèves",
+      "resources": "Ressources pédagogiques"
+    }
+  },
+  "studentPage": {
+    "welcomeMessage": "Tableau de bord de l'élève",
+    "description": "Suivez votre parcours d'apprentissage",
+    "sections": {
+      "courses": "Mes cours",
+      "assignments": "Devoirs",
+      "progress": "Progrès"
+    }
+  },
+  "parentPage": {
+    "welcomeMessage": "Tableau de bord des parents",
+    "description": "Suivez l'éducation de vos enfants",
+    "sections": {
+      "progress": "Progrès des enfants",
+      "communications": "Communications",
+      "events": "Événements scolaires"
     }
   }
 }

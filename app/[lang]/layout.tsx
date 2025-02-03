@@ -35,6 +35,9 @@ export default function LangLayout({
       dir={isRtl ? 'rtl' : 'ltr'}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="icon" href="/assets/images/logo.png" />
+      </head>
       <body
         className={`${inter.className} antialiased`}
         suppressHydrationWarning

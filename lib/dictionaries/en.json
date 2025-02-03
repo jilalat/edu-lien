@@ -1,11 +1,11 @@
 {
   "header": {
-    "home": "home Page",
+    "home": "Home",
     "languageSelection": "Select language",
-    "login": "Accéder à mon espace",
+    "login": "Access my account",
     "theme": {
-      "lightMode": "Toggle to Light Mode",
-      "darkMode": "Toggle to Dark Mode"
+      "lightMode": "Switch to Light Mode",
+      "darkMode": "Switch to Dark Mode"
     }
   },
   "footer": {
@@ -13,13 +13,6 @@
     "credits": "Carefully crafted by"
   },
   "homePage": {
-    "loginForm": {
-      "title": "Login",
-      "description": "Sign in to your account",
-      "usernamePlaceholder": "Username",
-      "passwordPlaceholder": "Password",
-      "submit": "Sign in"
-    },
     "features": {
       "title": "Features",
       "items": [
@@ -28,8 +21,8 @@
           "description": "Paths adapted to your needs"
         },
         {
-          "title": "Learning",
-          "description": "Connect with learners"
+          "title": "Smart Learning",
+          "description": "AI-powered learning recommendations"
         },
         {
           "title": "Global Collaboration",
@@ -43,15 +36,51 @@
     }
   },
   "loginPage": {
-    "welcomeMessage": "Bienvenue dans votre espace privé",
-    "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
+    "welcomeMessage": "Welcome to your private space",
+    "description": "An integrated information system that enables new school management methods.",
     "form": {
-      "title": "تسجيل الدخول",
-      "description": "الدخول إلى حسابك",
-      "usernameLabel": "Login",
-      "passwordLabel": "Mot de passe",
-      "rememberMe": "Garder ma session active",
-      "submitButton": "CONNEXION"
+      "title": "Login",
+      "description": "Sign in to your account",
+      "usernameLabel": "Email",
+      "passwordLabel": "Password",
+      "rememberMe": "Keep me signed in",
+      "submitButton": "SIGN IN"
+    }
+  },
+  "schoolPage": {
+    "welcomeMessage": "School Dashboard",
+    "description": "Manage your school efficiently",
+    "sections": {
+      "userManagement": "User Management",
+      "analytics": "System Analytics",
+      "settings": "Settings"
+    }
+  },
+  "teacherPage": {
+    "welcomeMessage": "Teacher Dashboard",
+    "description": "Manage your classes and students",
+    "sections": {
+      "classes": "My Classes",
+      "progress": "Student Progress",
+      "resources": "Teaching Resources"
+    }
+  },
+  "studentPage": {
+    "welcomeMessage": "Student Dashboard",
+    "description": "Track your learning journey",
+    "sections": {
+      "courses": "My Courses",
+      "assignments": "Assignments",
+      "progress": "Progress"
+    }
+  },
+  "parentPage": {
+    "welcomeMessage": "Parent Dashboard",
+    "description": "Monitor your children's education",
+    "sections": {
+      "progress": "Children Progress",
+      "communications": "Communications",
+      "events": "School Events"
     }
   }
 }

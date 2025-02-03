@@ -1,18 +1,17 @@
 {
   "header": {
-    "home": "الصفحة الرئيسية",
+    "home": "الرئيسية",
     "languageSelection": "اختيار اللغة",
-    "login": "Accéder à mon espace",
+    "login": "الدخول إلى حسابي",
     "theme": {
-      "lightMode": "Toggle to Light Mode",
-      "darkMode": "Toggle to Dark Mode"
+      "lightMode": "تفعيل الوضع النهاري",
+      "darkMode": "تفعيل الوضع الليلي"
     }
   },
   "footer": {
-    "copyrightNotice": "All rights reserved",
-    "credits": "Carefully crafted by"
+    "copyrightNotice": "جميع الحقوق محفوظة",
+    "credits": "تم التطوير بواسطة"
   },
-
   "homePage": {
     "features": {
       "title": "المميزات",
@@ -22,8 +21,8 @@
           "description": "مسارات مكيفة حسب احتياجاتك"
         },
         {
-          "title": "تعلم",
-          "description": "مسارات حسب احتياجاتك"
+          "title": "تعلم ذكي",
+          "description": "توصيات تعليمية مدعومة بالذكاء الاصطناعي"
         },
         {
           "title": "تعاون عالمي",
@@ -37,15 +36,51 @@
     }
   },
   "loginPage": {
-    "welcomeMessage": "Bienvenue dans votre espace privé",
-    "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
+    "welcomeMessage": "مرحباً بك في مساحتك الخاصة",
+    "description": "نظام معلومات متكامل يتيح تطبيق أساليب جديدة لإدارة المدرسة",
     "form": {
       "title": "تسجيل الدخول",
       "description": "الدخول إلى حسابك",
-      "usernameLabel": "Login",
-      "passwordLabel": "Mot de passe",
-      "rememberMe": "Garder ma session active",
-      "submitButton": "CONNEXION"
+      "usernameLabel": "البريد الإلكتروني",
+      "passwordLabel": "كلمة المرور",
+      "rememberMe": "تذكرني",
+      "submitButton": "دخول"
+    }
+  },
+  "schoolPage": {
+    "welcomeMessage": "لوحة تحكم المدرسة",
+    "description": "إدارة مدرستك بكفاءة",
+    "sections": {
+      "userManagement": "إدارة المستخدمين",
+      "analytics": "تحليلات النظام",
+      "settings": "الإعدادات"
+    }
+  },
+  "teacherPage": {
+    "welcomeMessage": "لوحة تحكم المعلم",
+    "description": "إدارة فصولك وطلابك",
+    "sections": {
+      "classes": "فصولي",
+      "progress": "تقدم الطلاب",
+      "resources": "الموارد التعليمية"
+    }
+  },
+  "studentPage": {
+    "welcomeMessage": "لوحة تحكم الطالب",
+    "description": "تتبع رحلتك التعليمية",
+    "sections": {
+      "courses": "دروسي",
+      "assignments": "الواجبات",
+      "progress": "التقدم"
+    }
+  },
+  "parentPage": {
+    "welcomeMessage": "لوحة تحكم ولي الأمر",
+    "description": "متابعة تعليم أبنائك",
+    "sections": {
+      "progress": "تقدم الأبناء",
+      "communications": "المراسلات",
+      "events": "الفعاليات المدرسية"
     }
   }
 }

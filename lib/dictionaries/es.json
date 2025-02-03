@@ -1,25 +1,18 @@
 {
   "header": {
-    "home": "home Page",
+    "home": "Inicio",
     "languageSelection": "Seleccionar idioma",
-    "login": "Accéder à mon espace",
+    "login": "Acceder a mi cuenta",
     "theme": {
-      "lightMode": "Toggle to Light Mode",
-      "darkMode": "Toggle to Dark Mode"
+      "lightMode": "Cambiar a modo claro",
+      "darkMode": "Cambiar a modo oscuro"
     }
   },
   "footer": {
-    "copyrightNotice": "All rights reserved",
-    "credits": "Carefully crafted by"
+    "copyrightNotice": "Todos los derechos reservados",
+    "credits": "Cuidadosamente creado por"
   },
   "homePage": {
-    "loginForm": {
-      "title": "Iniciar sesión",
-      "description": "Accede a tu cuenta",
-      "usernamePlaceholder": "Usuario",
-      "passwordPlaceholder": "Contraseña",
-      "submit": "Entrar"
-    },
     "features": {
       "title": "Características",
       "items": [
@@ -28,8 +21,8 @@
           "description": "Rutas adaptadas a tus necesidades"
         },
         {
-          "title": "Aprendizaje",
-          "description": "Rutas adaptadas"
+          "title": "Aprendizaje inteligente",
+          "description": "Recomendaciones de aprendizaje con IA"
         },
         {
           "title": "Colaboración global",
@@ -43,15 +36,51 @@
     }
   },
   "loginPage": {
-    "welcomeMessage": "Bienvenue dans votre espace privé",
-    "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
+    "welcomeMessage": "Bienvenido a tu espacio privado",
+    "description": "Un sistema de información integrado que permite nuevos métodos de gestión escolar.",
     "form": {
-      "title": "تسجيل الدخول",
-      "description": "الدخول إلى حسابك",
-      "usernameLabel": "Login",
-      "passwordLabel": "Mot de passe",
-      "rememberMe": "Garder ma session active",
-      "submitButton": "CONNEXION"
+      "title": "Iniciar sesión",
+      "description": "Accede a tu cuenta",
+      "usernameLabel": "Correo electrónico",
+      "passwordLabel": "Contraseña",
+      "rememberMe": "Mantener sesión iniciada",
+      "submitButton": "ENTRAR"
+    }
+  },
+  "schoolPage": {
+    "welcomeMessage": "Panel de control escolar",
+    "description": "Gestiona tu escuela eficientemente",
+    "sections": {
+      "userManagement": "Gestión de usuarios",
+      "analytics": "Análisis del sistema",
+      "settings": "Configuración"
+    }
+  },
+  "teacherPage": {
+    "welcomeMessage": "Panel de control del profesor",
+    "description": "Gestiona tus clases y estudiantes",
+    "sections": {
+      "classes": "Mis clases",
+      "progress": "Progreso de estudiantes",
+      "resources": "Recursos didácticos"
+    }
+  },
+  "studentPage": {
+    "welcomeMessage": "Panel de control del estudiante",
+    "description": "Sigue tu viaje de aprendizaje",
+    "sections": {
+      "courses": "Mis cursos",
+      "assignments": "Tareas",
+      "progress": "Progreso"
+    }
+  },
+  "parentPage": {
+    "welcomeMessage": "Panel de control de padres",
+    "description": "Monitorea la educación de tus hijos",
+    "sections": {
+      "progress": "Progreso de los hijos",
+      "communications": "Comunicaciones",
+      "events": "Eventos escolares"
     }
   }
 }

@@ -1,25 +1,18 @@
 {
   "header": {
     "home": "الصفحة الرئيسية",
-    "languageSelection": "اختار اللغة",
-    "login": "Accéder à mon espace",
+    "languageSelection": "اختيار اللغة",
+    "login": "دخول لحسابي",
     "theme": {
-      "lightMode": "Toggle to Light Mode",
-      "darkMode": "Toggle to Dark Mode"
+      "lightMode": "تشغيل الوضع النهاري",
+      "darkMode": "تشغيل الوضع الليلي"
     }
   },
   "footer": {
-    "copyrightNotice": "All rights reserved",
-    "credits": "Carefully crafted by"
+    "copyrightNotice": "جميع الحقوق محفوظة",
+    "credits": "تم الإنشاء بواسطة"
   },
   "homePage": {
-    "loginForm": {
-      "title": "تسجيل الدخول",
-      "description": "دخل للحساب ديالك",
-      "usernamePlaceholder": "اسم المستخدم",
-      "passwordPlaceholder": "كلمة السر",
-      "submit": "دخول"
-    },
     "features": {
       "title": "المميزات",
       "items": [
@@ -28,8 +21,8 @@
           "description": "دروس متناسبة مع احتياجاتك"
         },
         {
-          "title": "تعلم",
-          "description": "مسارات حسب احتياجاتك"
+          "title": "تعلم ذكي",
+          "description": "توصيات تعليمية بالذكاء الاصطناعي"
         },
         {
           "title": "تعاون عالمي",
@@ -43,15 +36,51 @@
     }
   },
   "loginPage": {
-    "welcomeMessage": "Bienvenue dans votre espace privé",
-    "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
+    "welcomeMessage": "مرحبا بك في فضائك الخاص",
+    "description": "نظام معلومات متكامل كيسمح بتطبيق طرق جديدة ديال تدبير المدرسة",
     "form": {
       "title": "تسجيل الدخول",
-      "description": "الدخول إلى حسابك",
-      "usernameLabel": "Login",
-      "passwordLabel": "Mot de passe",
-      "rememberMe": "Garder ma session active",
-      "submitButton": "CONNEXION"
+      "description": "دخل لحسابك",
+      "usernameLabel": "البريد الإلكتروني",
+      "passwordLabel": "كلمة السر",
+      "rememberMe": "بقيني متصل",
+      "submitButton": "دخول"
+    }
+  },
+  "schoolPage": {
+    "welcomeMessage": "لوحة تحكم المدرسة",
+    "description": "دبر مدرستك بفعالية",
+    "sections": {
+      "userManagement": "تدبير المستخدمين",
+      "analytics": "تحليلات النظام",
+      "settings": "الإعدادات"
+    }
+  },
+  "teacherPage": {
+    "welcomeMessage": "لوحة تحكم الأستاذ",
+    "description": "دبر الأقسام والتلاميذ ديالك",
+    "sections": {
+      "classes": "الأقسام ديالي",
+      "progress": "تقدم التلاميذ",
+      "resources": "الموارد التعليمية"
+    }
+  },
+  "studentPage": {
+    "welcomeMessage": "لوحة تحكم التلميذ",
+    "description": "تبع المسار التعليمي ديالك",
+    "sections": {
+      "courses": "الدروس ديالي",
+      "assignments": "الواجبات",
+      "progress": "التقدم"
+    }
+  },
+  "parentPage": {
+    "welcomeMessage": "لوحة تحكم الوالدين",
+    "description": "تبع تعليم ولادك",
+    "sections": {
+      "progress": "تقدم الولاد",
+      "communications": "المراسلات",
+      "events": "أنشطة المدرسة"
     }
   }
 }
