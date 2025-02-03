@@ -36,7 +36,7 @@ export default function LangLayout({
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" href="/assets/images/logo.png" />
+        <link rel="icon" href="./favicon.ico" />
       </head>
       <body
         className={`${inter.className} antialiased`}

@@ -17,7 +17,7 @@ export default async function ParentDashboard({
   params: { lang: string };
 }) {
   // TODO: Replace with actual auth check
-  const isParent = false;
+  const isParent = true;
 
   if (!isParent) {
     redirect(`/${lang}`);
@@ -27,18 +27,29 @@ export default async function ParentDashboard({
 
   return (
     <div className="container py-8">
-      <h1 className="text-3xl font-bold mb-6">Parent Dashboard</h1>
+      <h1 className="text-3xl font-bold mb-6">
+        {dict.parentPage.welcomeMessage}
+      </h1>
+      <p className="text-muted-foreground mb-8">
+        {dict.parentPage.description}
+      </p>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">Children Progress</h2>
+          <h2 className="text-xl font-semibold mb-4">
+            {dict.parentPage.sections.progress}
+          </h2>
           {/* Add children progress tracking */}
         </div>
         <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">Communications</h2>
+          <h2 className="text-xl font-semibold mb-4">
+            {dict.parentPage.sections.communications}
+          </h2>
           {/* Add messaging system */}
         </div>
         <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">Events</h2>
+          <h2 className="text-xl font-semibold mb-4">
+            {dict.parentPage.sections.events}
+          </h2>
           {/* Add school events calendar */}
         </div>
       </div>
