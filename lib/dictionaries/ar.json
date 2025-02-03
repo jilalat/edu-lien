@@ -1,17 +1,19 @@
 {
-  "home": {
-    "hero": {
-      "title": "مرحباً بك في EduLien",
-      "description": "منصتك التعليمية المتصلة للتعلم بدون حدود",
-      "cta": "ابدأ الآن"
-    },
-    "loginForm": {
-      "title": "تسجيل الدخول",
-      "description": "الدخول إلى حسابك",
-      "usernamePlaceholder": "اسم المستخدم",
-      "passwordPlaceholder": "كلمة المرور",
-      "submit": "دخول"
-    },
+  "header": {
+    "home": "الصفحة الرئيسية",
+    "languageSelection": "اختيار اللغة",
+    "login": "Accéder à mon espace",
+    "theme": {
+      "lightMode": "Toggle to Light Mode",
+      "darkMode": "Toggle to Dark Mode"
+    }
+  },
+  "footer": {
+    "copyrightNotice": "All rights reserved",
+    "credits": "Carefully crafted by"
+  },
+
+  "homePage": {
     "features": {
       "title": "المميزات",
       "items": [
@@ -32,6 +34,18 @@
           "description": "الوصول إلى مكتبة متنوعة من المحتوى"
         }
       ]
+    }
+  },
+  "loginPage": {
+    "welcomeMessage": "Bienvenue dans votre espace privé",
+    "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
+    "form": {
+      "title": "تسجيل الدخول",
+      "description": "الدخول إلى حسابك",
+      "usernameLabel": "Login",
+      "passwordLabel": "Mot de passe",
+      "rememberMe": "Garder ma session active",
+      "submitButton": "CONNEXION"
     }
   }
 }

@@ -1,10 +1,18 @@
 {
-  "home": {
-    "hero": {
-      "title": "Bienvenue sur EduLien",
-      "description": "Votre plateforme éducative connectée pour un apprentissage sans frontières",
-      "cta": "Commencer"
-    },
+  "header": {
+    "home": "home Page",
+    "languageSelection": "Sélectionner la langue",
+    "login": "Accéder à mon espace",
+    "theme": {
+      "lightMode": "Passer en mode clair",
+      "darkMode": "Passer en mode sombre"
+    }
+  },
+  "footer": {
+    "copyrightNotice": "Tous droits réservés",
+    "credits": "Soigneusement conçu par"
+  },
+  "homePage": {
     "loginForm": {
       "title": "Connexion",
       "description": "Connectez-vous à votre compte",
@@ -32,6 +40,18 @@
           "description": "Accédez à une bibliothèque de contenus diversifiés"
         }
       ]
+    }
+  },
+  "loginPage": {
+    "welcomeMessage": "Bienvenue dans votre espace privé",
+    "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
+    "form": {
+      "title": "تسجيل الدخول",
+      "description": "الدخول إلى حسابك",
+      "usernameLabel": "Login",
+      "passwordLabel": "Mot de passe",
+      "rememberMe": "Garder ma session active",
+      "submitButton": "CONNEXION"
     }
   }
 }

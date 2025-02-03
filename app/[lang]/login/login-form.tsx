@@ -8,9 +8,11 @@ import { useToast } from '@/hooks/use-toast';
 
 interface LoginFormProps {
   dict: {
-    usernamePlaceholder: string;
-    passwordPlaceholder: string;
-    submit: string;
+    title: string;
+    description: string;
+    usernameLabel: string;
+    passwordLabel: string;
+    submitButton: string;
   };
   lang: string;
 }
@@ -52,26 +54,28 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <Input
-        type="email"
-        placeholder={dict.usernamePlaceholder}
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-        disabled={isLoading}
-      />
-      <Input
-        type="password"
-        placeholder={dict.passwordPlaceholder}
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-        disabled={isLoading}
-      />
-      <Button type="submit" className="w-full" disabled={isLoading}>
-        {isLoading ? 'Loading...' : dict.submit}
-      </Button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <Input
+          type="email"
+          placeholder={dict.usernameLabel}
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          required
+          disabled={isLoading}
+        />
+        <Input
+          type="password"
+          placeholder={dict.passwordLabel}
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+          required
+          disabled={isLoading}
+        />
+        <Button type="submit" className="w-full" disabled={isLoading}>
+          {isLoading ? 'Loading...' : dict.submitButton}
+        </Button>
+      </form>
+    </div>
   );
 }

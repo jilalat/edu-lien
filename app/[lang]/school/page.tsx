@@ -17,7 +17,7 @@ export default async function SchoolDashboard({
   params: { lang: string };
 }) {
   // TODO: Replace with actual auth check
-  const isSchool = false;
+  const isSchool = true;
 
   if (!isSchool) {
     redirect(`/${lang}`);

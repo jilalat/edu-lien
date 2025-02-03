@@ -1,10 +1,18 @@
 {
-  "home": {
-    "hero": {
-      "title": "Bienvenido a EduLien",
-      "description": "Tu plataforma educativa conectada para aprender sin fronteras",
-      "cta": "Comenzar"
-    },
+  "header": {
+    "home": "home Page",
+    "languageSelection": "Seleccionar idioma",
+    "login": "Accéder à mon espace",
+    "theme": {
+      "lightMode": "Toggle to Light Mode",
+      "darkMode": "Toggle to Dark Mode"
+    }
+  },
+  "footer": {
+    "copyrightNotice": "All rights reserved",
+    "credits": "Carefully crafted by"
+  },
+  "homePage": {
     "loginForm": {
       "title": "Iniciar sesión",
       "description": "Accede a tu cuenta",
@@ -32,6 +40,18 @@
           "description": "Accede a una biblioteca diversa de contenido"
         }
       ]
+    }
+  },
+  "loginPage": {
+    "welcomeMessage": "Bienvenue dans votre espace privé",
+    "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
+    "form": {
+      "title": "تسجيل الدخول",
+      "description": "الدخول إلى حسابك",
+      "usernameLabel": "Login",
+      "passwordLabel": "Mot de passe",
+      "rememberMe": "Garder ma session active",
+      "submitButton": "CONNEXION"
     }
   }
 }

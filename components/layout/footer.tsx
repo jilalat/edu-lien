@@ -1,19 +1,31 @@
 'use client';
 
-export function Footer() {
+import { getDictionary } from '@/lib/dictionary';
+import Link from 'next/link';
+
+export async function Footer({ lang }: { lang: string }) {
+  const dict = await getDictionary(lang);
   return (
-    <footer className="border-t bg-background">
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
-          <div>
-            <h3 className="text-lg font-semibold">EduLien</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Connecting education worldwide
-            </p>
-          </div>
+    <footer className="border-t border-gray-300 bg-background/95 backdrop-blur-md shadow-lg px-4">
+      <div className="container flex flex-col md:flex-row items-center justify-between mx-auto py-6 text-sm text-muted-foreground">
+        <div className="text-center md:text-left">
+          © {new Date().getFullYear()}{' '}
+          <Link
+            href="https://f12solutions.com"
+            className="font-bold text-primary hover:text-primary/80 transition duration-200"
+          >
+            EduLien
+          </Link>
+          . {dict.footer.copyrightNotice}.
         </div>
-        <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} EduLien. All rights reserved.
+        <div className="mt-3 md:mt-0 text-center md:text-right">
+          {dict.footer.credits}
+          <Link
+            href="https://f12solutions.com"
+            className="font-bold text-primary hover:text-primary/80 transition duration-200 ml-1"
+          >
+            F12Solutions
+          </Link>
         </div>
       </div>
     </footer>

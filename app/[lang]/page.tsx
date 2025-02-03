@@ -1,6 +1,5 @@
-import { getDictionary } from '@/lib/dictionary';
-import { HeroSection } from '@/components/home/hero-section';
 import { FeaturesSection } from '@/components/home/features-section';
+import { getDictionary } from '@/lib/dictionary';
 import { redirect } from 'next/navigation';
 
 export async function generateStaticParams() {
@@ -29,9 +28,8 @@ export default async function Home({
   }
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <HeroSection dict={dict.home} />
-      <FeaturesSection dict={dict.home} />
+    <div className="flex flex-col">
+      <FeaturesSection dict={dict.homePage} />
     </div>
   );
 }

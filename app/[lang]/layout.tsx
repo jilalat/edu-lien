@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google';
-import { Header } from '@/components/layout/header';
+import { Header } from '@/components/layout/header/header';
 import { Providers } from '../providers';
 import { Toaster } from '@/components/ui/toaster';
 import '../globals.css';
@@ -36,15 +36,14 @@ export default function LangLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${inter.className} antialiased px-8`}
+        className={`${inter.className} antialiased`}
         suppressHydrationWarning
       >
         <Providers defaultTheme="system" enableSystem>
           <div className="relative min-h-screen flex flex-col">
             <Header lang={params.lang} />
-            {/* <Main /> */}
-            <main className="flex-1 container mx-auto px-4">{children}</main>
-            <Footer />
+            <Main>{children}</Main>
+            <Footer lang={params.lang} />
           </div>
           <Toaster />
         </Providers>
