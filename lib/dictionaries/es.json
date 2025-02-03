@@ -44,7 +44,9 @@
       "usernameLabel": "Correo electrónico",
       "passwordLabel": "Contraseña",
       "rememberMe": "Mantener sesión iniciada",
-      "submitButton": "ENTRAR"
+      "submitButton": "SE CONNECTER",
+      "forgotPassword": "Mot de passe oublié ?",
+      "forgotPasswordDescription": "Entrez votre email pour réinitialiser votre mot de passe"
     }
   },
   "schoolPage": {

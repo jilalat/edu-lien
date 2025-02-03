@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
+import { Checkbox } from '@/components/ui/checkbox';
+import Link from 'next/link';
 
 interface LoginFormProps {
   dict: {
@@ -12,7 +14,9 @@ interface LoginFormProps {
     description: string;
     usernameLabel: string;
     passwordLabel: string;
+    rememberMe: string;
     submitButton: string;
+    forgotPassword: string;
   };
   lang: string;
 }
@@ -20,6 +24,7 @@ interface LoginFormProps {
 export function LoginForm({ dict, lang }: LoginFormProps) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const { toast } = useToast();
@@ -32,7 +37,7 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
       const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, password, rememberMe }),
       });
 
       if (!response.ok) {
@@ -72,6 +77,27 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
           required
           disabled={isLoading}
         />
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <Checkbox
+              id="rememberMe"
+              checked={rememberMe}
+              onCheckedChange={(checked) => setRememberMe(checked as boolean)}
+            />
+            <label
+              htmlFor="rememberMe"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              {dict.rememberMe}
+            </label>
+          </div>
+          <Link
+            href={`/${lang}/auth/forgot-password`}
+            className="text-sm text-primary hover:underline"
+          >
+            {dict.forgotPassword}
+          </Link>
+        </div>
         <Button type="submit" className="w-full" disabled={isLoading}>
           {isLoading ? 'Loading...' : dict.submitButton}
         </Button>

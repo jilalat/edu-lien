@@ -44,7 +44,9 @@
       "usernameLabel": "Email",
       "passwordLabel": "Password",
       "rememberMe": "Keep me signed in",
-      "submitButton": "SIGN IN"
+      "submitButton": "SIGN IN",
+      "forgotPassword": "Forgot password?",
+      "forgotPasswordDescription": "Enter your email to reset your password"
     }
   },
   "schoolPage": {
