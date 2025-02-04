@@ -1,62 +1,63 @@
-import { SignJWT, jwtVerify } from 'jose';
-import { validateUser } from './db';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 
-const secretKey = new TextEncoder().encode(
-  process.env.JWT_SECRET_KEY || 'your-secret-key'
-);
-
-const TOKEN_EXPIRY = '24h';
+const supabase = createClientComponentClient();
 
 export async function signIn(email: string, password: string) {
-  const user = await validateUser(email, password);
+  const { data: { user }, error } = await supabase.auth.signInWithPassword({
+    email,
+    password
+  });
 
-  if (!user) {
-    throw new Error('Invalid credentials');
+  if (error) {
+    throw error;
   }
 
-  const token = await new SignJWT({ 
-    userId: user.id, 
-    email: user.email,
-    role: user.role 
-  })
-    .setProtectedHeader({ alg: 'HS256' })
-    .setExpirationTime(TOKEN_EXPIRY)
-    .setIssuedAt()
-    .sign(secretKey);
+  if (!user) {
+    throw new Error('User not found');
+  }
 
-  cookies().set('token', token, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'strict',
-    maxAge: 24 * 60 * 60 // 24 hours
-  });
+  const { data: userData, error: userError } = await supabase
+    .from('auth.users')
+    .select('role')
+    .eq('id', user.id)
+    .single();
+
+  if (userError) {
+    throw userError;
+  }
 
   return {
     userId: user.id,
-    role: user.role
+    role: userData.role
   };
 }
 
 export async function verifyAuth() {
-  const token = cookies().get('token')?.value;
+  const { data: { session }, error } = await supabase.auth.getSession();
 
-  if (!token) {
+  if (error || !session) {
     throw new Error('Unauthorized');
   }
 
-  try {
-    const verified = await jwtVerify(token, secretKey);
-    return verified.payload as {
-      userId: string;
-      email: string;
-      role: string;
-    };
-  } catch (error) {
-    throw new Error('Invalid token');
+  const { data: userData, error: userError } = await supabase
+    .from('auth.users')
+    .select('role')
+    .eq('id', session.user.id)
+    .single();
+
+  if (userError) {
+    throw userError;
   }
+
+  return {
+    userId: session.user.id,
+    email: session.user.email,
+    role: userData.role
+  };
 }
 
 export async function signOut() {
+  await supabase.auth.signOut();
   cookies().delete('token');
 }

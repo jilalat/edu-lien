@@ -13,7 +13,7 @@ interface LogInProps {
 export function LogIn({ dict, lang }: LogInProps) {
   return (
     <Link
-      href={`/${lang}/login`}
+      href={`/${lang}/auth/login`}
       className="flex items-center space-x-2"
       title={dict.login}
     >

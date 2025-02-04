@@ -1,6 +1,6 @@
+import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { jwtVerify } from 'jose';
 
 const locales = ['en', 'fr', 'ar', 'es', 'ma'];
 const defaultLocale = 'fr';
@@ -11,12 +11,9 @@ const publicPaths = [
   '/ar',
   '/es',
   '/ma',
+  '/auth/callback',
   '/api/auth/login'
 ];
-
-const secretKey = new TextEncoder().encode(
-  process.env.JWT_SECRET_KEY || 'your-secret-key'
-);
 
 function getLocale(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
@@ -46,21 +43,19 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Verify authentication
-  const token = request.cookies.get('token')?.value;
+  // Create Supabase client
+  const res = NextResponse.next();
+  const supabase = createMiddlewareClient({ req: request, res });
 
-  if (!token) {
+  // Verify session
+  const { data: { session }, error } = await supabase.auth.getSession();
+
+  if (error || !session) {
     const locale = getLocale(request);
     return NextResponse.redirect(new URL(`/${locale}`, request.url));
   }
 
-  try {
-    await jwtVerify(token, secretKey);
-    return NextResponse.next();
-  } catch (error) {
-    const locale = getLocale(request);
-    return NextResponse.redirect(new URL(`/${locale}`, request.url));
-  }
+  return res;
 }
 
 export const config = {

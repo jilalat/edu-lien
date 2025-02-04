@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
 import { Checkbox } from '@/components/ui/checkbox';
 import Link from 'next/link';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 
 interface LoginFormProps {
   dict: {
@@ -28,24 +29,31 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const { toast } = useToast();
+  const supabase = createClientComponentClient();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password, rememberMe }),
+      const { data: { user }, error: authError } = await supabase.auth.signInWithPassword({
+        email,
+        password,
       });
 
-      if (!response.ok) {
-        throw new Error('Login failed');
-      }
+      if (authError) throw authError;
 
-      const { userId, role } = await response.json();
-      router.push(`/${lang}/${role}/${userId}`);
+      if (!user) throw new Error('User not found');
+
+      const { data: userData, error: userError } = await supabase
+        .from('auth.users')
+        .select('role')
+        .eq('id', user.id)
+        .single();
+
+      if (userError) throw userError;
+
+      router.push(`/${lang}/${userData.role}/${user.id}`);
       router.refresh();
     } catch (error) {
       toast({
