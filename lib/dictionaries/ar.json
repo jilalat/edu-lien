@@ -41,48 +41,26 @@
     "form": {
       "title": "تسجيل الدخول",
       "description": "الدخول إلى حسابك",
-      "usernameLabel": "البريد الإلكتروني",
+      "identifierLabel": "المعرف",
       "passwordLabel": "كلمة المرور",
       "rememberMe": "تذكرني",
-      "submitButton": "SE CONNECTER",
-      "forgotPassword": "Mot de passe oublié ?",
-      "forgotPasswordDescription": "Entrez votre email pour réinitialiser votre mot de passe"
+      "submitButton": "تسجيل الدخول",
+      "forgotPassword": "نسيت كلمة المرور؟",
+      "forgotIdentifier": "نسيت المعرف؟",
+      "forgotPasswordDescription": "أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور",
+      "forgotIdentifierDescription": "أدخل بريدك الإلكتروني لاسترداد المعرف",
+      "backToLogin": "العودة لتسجيل الدخول",
+      "backToHome": "العودة للرئيسية",
+      "emailLabel": "البريد الإلكتروني",
+      "newPassword": "كلمة المرور الجديدة",
+      "newPasswordDescription": "إنشاء كلمة مرور جديدة",
+      "newPasswordLabel": "كلمة المرور الجديدة",
+      "confirmPasswordLabel": "تأكيد كلمة المرور"
     }
   },
-  "schoolPage": {
-    "welcomeMessage": "لوحة تحكم المدرسة",
-    "description": "إدارة مدرستك بكفاءة",
-    "sections": {
-      "userManagement": "إدارة المستخدمين",
-      "analytics": "تحليلات النظام",
-      "settings": "الإعدادات"
-    }
-  },
-  "teacherPage": {
-    "welcomeMessage": "لوحة تحكم المعلم",
-    "description": "إدارة فصولك وطلابك",
-    "sections": {
-      "classes": "فصولي",
-      "progress": "تقدم الطلاب",
-      "resources": "الموارد التعليمية"
-    }
-  },
-  "studentPage": {
-    "welcomeMessage": "لوحة تحكم الطالب",
-    "description": "تتبع رحلتك التعليمية",
-    "sections": {
-      "courses": "دروسي",
-      "assignments": "الواجبات",
-      "progress": "التقدم"
-    }
-  },
-  "parentPage": {
-    "welcomeMessage": "لوحة تحكم ولي الأمر",
-    "description": "متابعة تعليم أبنائك",
-    "sections": {
-      "progress": "تقدم الأبناء",
-      "communications": "المراسلات",
-      "events": "الفعاليات المدرسية"
-    }
+  "notFound": {
+    "title": "الصفحة غير موجودة",
+    "description": "عذراً، الصفحة التي تبحث عنها غير موجودة.",
+    "backHome": "العودة للرئيسية"
   }
 }

@@ -6,6 +6,7 @@ import '../globals.css';
 import { Footer } from '@/components/layout/footer';
 import { Main } from '@/components/layout/main';
 import { generateStaticParams } from '@/lib/dictionaries/static-params';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -29,7 +30,7 @@ export default function LangLayout({
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href="/assets/images/logo.png" />
       </head>
       <body
         className={`${inter.className} antialiased`}

@@ -41,48 +41,26 @@
     "form": {
       "title": "Login",
       "description": "Sign in to your account",
-      "usernameLabel": "Email",
+      "identifierLabel": "Identifier",
       "passwordLabel": "Password",
       "rememberMe": "Keep me signed in",
       "submitButton": "SIGN IN",
       "forgotPassword": "Forgot password?",
-      "forgotPasswordDescription": "Enter your email to reset your password"
+      "forgotIdentifier": "Forgot identifier?",
+      "forgotPasswordDescription": "Enter your email to reset your password",
+      "forgotIdentifierDescription": "Enter your email to recover your identifier",
+      "backToLogin": "Back to login",
+      "backToHome": "Back to Home",
+      "emailLabel": "Email",
+      "newPassword": "New password",
+      "newPasswordDescription": "Create your new password",
+      "newPasswordLabel": "New password",
+      "confirmPasswordLabel": "Confirm password"
     }
   },
-  "schoolPage": {
-    "welcomeMessage": "School Dashboard",
-    "description": "Manage your school efficiently",
-    "sections": {
-      "userManagement": "User Management",
-      "analytics": "System Analytics",
-      "settings": "Settings"
-    }
-  },
-  "teacherPage": {
-    "welcomeMessage": "Teacher Dashboard",
-    "description": "Manage your classes and students",
-    "sections": {
-      "classes": "My Classes",
-      "progress": "Student Progress",
-      "resources": "Teaching Resources"
-    }
-  },
-  "studentPage": {
-    "welcomeMessage": "Student Dashboard",
-    "description": "Track your learning journey",
-    "sections": {
-      "courses": "My Courses",
-      "assignments": "Assignments",
-      "progress": "Progress"
-    }
-  },
-  "parentPage": {
-    "welcomeMessage": "Parent Dashboard",
-    "description": "Monitor your children's education",
-    "sections": {
-      "progress": "Children Progress",
-      "communications": "Communications",
-      "events": "School Events"
-    }
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "backHome": "Back to home"
   }
 }

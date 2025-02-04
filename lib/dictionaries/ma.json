@@ -41,48 +41,26 @@
     "form": {
       "title": "تسجيل الدخول",
       "description": "دخل لحسابك",
-      "usernameLabel": "البريد الإلكتروني",
+      "identifierLabel": "المعرف",
       "passwordLabel": "كلمة السر",
       "rememberMe": "بقيني متصل",
-      "submitButton": "SE CONNECTER",
-      "forgotPassword": "Mot de passe oublié ?",
-      "forgotPasswordDescription": "Entrez votre email pour réinitialiser votre mot de passe"
+      "submitButton": "دخول",
+      "forgotPassword": "نسيتي كلمة السر؟",
+      "forgotIdentifier": "نسيتي المعرف؟",
+      "forgotPasswordDescription": "دخل البريد الإلكتروني باش تعاود ضبط كلمة السر",
+      "forgotIdentifierDescription": "دخل البريد الإلكتروني باش ترجع المعرف",
+      "backToLogin": "رجوع للدخول",
+      "backToHome": "رجوع للصفحة الرئيسية",
+      "emailLabel": "البريد الإلكتروني",
+      "newPassword": "كلمة السر الجديدة",
+      "newPasswordDescription": "دير كلمة سر جديدة",
+      "newPasswordLabel": "كلمة السر الجديدة",
+      "confirmPasswordLabel": "أكد كلمة السر"
     }
   },
-  "schoolPage": {
-    "welcomeMessage": "لوحة تحكم المدرسة",
-    "description": "دبر مدرستك بفعالية",
-    "sections": {
-      "userManagement": "تدبير المستخدمين",
-      "analytics": "تحليلات النظام",
-      "settings": "الإعدادات"
-    }
-  },
-  "teacherPage": {
-    "welcomeMessage": "لوحة تحكم الأستاذ",
-    "description": "دبر الأقسام والتلاميذ ديالك",
-    "sections": {
-      "classes": "الأقسام ديالي",
-      "progress": "تقدم التلاميذ",
-      "resources": "الموارد التعليمية"
-    }
-  },
-  "studentPage": {
-    "welcomeMessage": "لوحة تحكم التلميذ",
-    "description": "تبع المسار التعليمي ديالك",
-    "sections": {
-      "courses": "الدروس ديالي",
-      "assignments": "الواجبات",
-      "progress": "التقدم"
-    }
-  },
-  "parentPage": {
-    "welcomeMessage": "لوحة تحكم الوالدين",
-    "description": "تبع تعليم ولادك",
-    "sections": {
-      "progress": "تقدم الولاد",
-      "communications": "المراسلات",
-      "events": "أنشطة المدرسة"
-    }
+  "notFound": {
+    "title": "الصفحة ما كايناش",
+    "description": "سمح لينا، الصفحة لي كتقلب عليها ما كايناش.",
+    "backHome": "رجوع للصفحة الرئيسية"
   }
 }

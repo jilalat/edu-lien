@@ -41,48 +41,26 @@
     "form": {
       "title": "Iniciar sesión",
       "description": "Accede a tu cuenta",
-      "usernameLabel": "Correo electrónico",
+      "identifierLabel": "Identificador",
       "passwordLabel": "Contraseña",
       "rememberMe": "Mantener sesión iniciada",
-      "submitButton": "SE CONNECTER",
-      "forgotPassword": "Mot de passe oublié ?",
-      "forgotPasswordDescription": "Entrez votre email pour réinitialiser votre mot de passe"
+      "submitButton": "INICIAR SESIÓN",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "forgotIdentifier": "¿Olvidaste tu identificador?",
+      "forgotPasswordDescription": "Ingresa tu email para restablecer tu contraseña",
+      "forgotIdentifierDescription": "Ingresa tu email para recuperar tu identificador",
+      "backToLogin": "Volver al inicio de sesión",
+      "backToHome": "Volver al inicio",
+      "emailLabel": "Email",
+      "newPassword": "Nueva contraseña",
+      "newPasswordDescription": "Crea tu nueva contraseña",
+      "newPasswordLabel": "Nueva contraseña",
+      "confirmPasswordLabel": "Confirmar contraseña"
     }
   },
-  "schoolPage": {
-    "welcomeMessage": "Panel de control escolar",
-    "description": "Gestiona tu escuela eficientemente",
-    "sections": {
-      "userManagement": "Gestión de usuarios",
-      "analytics": "Análisis del sistema",
-      "settings": "Configuración"
-    }
-  },
-  "teacherPage": {
-    "welcomeMessage": "Panel de control del profesor",
-    "description": "Gestiona tus clases y estudiantes",
-    "sections": {
-      "classes": "Mis clases",
-      "progress": "Progreso de estudiantes",
-      "resources": "Recursos didácticos"
-    }
-  },
-  "studentPage": {
-    "welcomeMessage": "Panel de control del estudiante",
-    "description": "Sigue tu viaje de aprendizaje",
-    "sections": {
-      "courses": "Mis cursos",
-      "assignments": "Tareas",
-      "progress": "Progreso"
-    }
-  },
-  "parentPage": {
-    "welcomeMessage": "Panel de control de padres",
-    "description": "Monitorea la educación de tus hijos",
-    "sections": {
-      "progress": "Progreso de los hijos",
-      "communications": "Comunicaciones",
-      "events": "Eventos escolares"
-    }
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que buscas no existe.",
+    "backHome": "Volver al inicio"
   }
 }
