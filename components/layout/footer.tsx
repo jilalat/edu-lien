@@ -1,5 +1,6 @@
 'use client';
 
+import { routes } from '@/config/routes';
 import { getDictionary } from '@/lib/dictionary';
 import Link from 'next/link';
 
@@ -11,7 +12,7 @@ export async function Footer({ lang }: { lang: string }) {
         <div className="text-center md:text-left">
           © {new Date().getFullYear()}{' '}
           <Link
-            href="https://f12solutions.com"
+            href={routes.home(lang)}
             className="font-bold text-primary hover:text-primary/80 transition duration-200"
           >
             EduLien
@@ -21,7 +22,7 @@ export async function Footer({ lang }: { lang: string }) {
         <div className="mt-3 md:mt-0 text-center md:text-right">
           {dict.footer.credits}
           <Link
-            href="https://f12solutions.com"
+            href={routes.external.f12Solutions()}
             className="font-bold text-primary hover:text-primary/80 transition duration-200 ml-1"
           >
             F12Solutions

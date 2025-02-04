@@ -1,6 +1,7 @@
 'use client';
 
 import logo from '@/assets/images/logo.png';
+import { routes } from '@/config/routes';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -14,7 +15,7 @@ interface LogoProps {
 export function Logo({ dict, lang }: LogoProps) {
   return (
     <Link
-      href={`/${lang}`}
+      href={routes.home(lang)}
       className="flex items-center space-x-2"
       title={dict.home}
     >

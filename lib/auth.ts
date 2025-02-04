@@ -1,5 +1,4 @@
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
-import { cookies } from 'next/headers';
 
 const supabase = createClientComponentClient();
 
@@ -18,7 +17,7 @@ export async function signIn(email: string, password: string) {
   }
 
   const { data: userData, error: userError } = await supabase
-    .from('auth.users')
+    .from('users')
     .select('role')
     .eq('id', user.id)
     .single();
@@ -41,7 +40,7 @@ export async function verifyAuth() {
   }
 
   const { data: userData, error: userError } = await supabase
-    .from('auth.users')
+    .from('users')
     .select('role')
     .eq('id', session.user.id)
     .single();
@@ -59,5 +58,4 @@ export async function verifyAuth() {
 
 export async function signOut() {
   await supabase.auth.signOut();
-  cookies().delete('token');
 }

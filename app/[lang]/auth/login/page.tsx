@@ -19,7 +19,7 @@ export default async function LoginPage({
         </p>
       </div>
       <div className="p-8 lg:p-12 flex flex-col justify-center">
-        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
           {dict.loginPage.form.title}
         </h2>
         <p className="text-gray-600 dark:text-gray-300 mb-6">

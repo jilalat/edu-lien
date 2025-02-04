@@ -1,16 +1,10 @@
 import { FeaturesSection } from '@/components/home/features-section';
+import { routes } from '@/config/routes';
 import { getDictionary } from '@/lib/dictionary';
 import { redirect } from 'next/navigation';
+import { generateStaticParams } from '@/lib/dictionaries/static-params';
 
-export async function generateStaticParams() {
-  return [
-    { lang: 'en' },
-    { lang: 'fr' },
-    { lang: 'ar' },
-    { lang: 'es' },
-    { lang: 'ma' },
-  ];
-}
+export { generateStaticParams };
 
 export default async function Home({
   params: { lang },
@@ -24,7 +18,7 @@ export default async function Home({
   const userRole = null;
 
   if (isLoggedIn && userRole) {
-    redirect(`/${lang}/${userRole}`);
+    redirect(routes.roleBasedRoute(lang, userRole));
   }
 
   return (

@@ -12,6 +12,8 @@ const publicPaths = [
   '/es',
   '/ma',
   '/auth/callback',
+  '/auth/login',
+  '/auth/forgot-password',
   '/api/auth/login'
 ];
 
@@ -39,7 +41,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // Skip auth check for public paths
-  if (publicPaths.some(path => pathname.startsWith(path))) {
+  if (publicPaths.some(path => pathname.includes(path))) {
     return NextResponse.next();
   }
 
@@ -52,7 +54,7 @@ export async function middleware(request: NextRequest) {
 
   if (error || !session) {
     const locale = getLocale(request);
-    return NextResponse.redirect(new URL(`/${locale}`, request.url));
+    return NextResponse.redirect(new URL(`/${locale}/auth/login`, request.url));
   }
 
   return res;
@@ -60,6 +62,6 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next|api/auth/login|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)',
+    '/((?!_next|api/auth/login|assets|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)',
   ],
 };

@@ -1,5 +1,6 @@
 'use client';
 
+import { routes } from '@/config/routes';
 import { UserCircle2 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -13,7 +14,7 @@ interface LogInProps {
 export function LogIn({ dict, lang }: LogInProps) {
   return (
     <Link
-      href={`/${lang}/auth/login`}
+      href={routes.auth.login(lang)}
       className="flex items-center space-x-2"
       title={dict.login}
     >

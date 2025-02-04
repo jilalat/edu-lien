@@ -5,18 +5,11 @@ import { Toaster } from '@/components/ui/toaster';
 import '../globals.css';
 import { Footer } from '@/components/layout/footer';
 import { Main } from '@/components/layout/main';
+import { generateStaticParams } from '@/lib/dictionaries/static-params';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export async function generateStaticParams() {
-  return [
-    { lang: 'en' },
-    { lang: 'fr' },
-    { lang: 'ar' },
-    { lang: 'es' },
-    { lang: 'ma' },
-  ];
-}
+export { generateStaticParams };
 
 const rtlLanguages = ['ar', 'ma'];
 

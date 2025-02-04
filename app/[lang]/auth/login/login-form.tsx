@@ -1,13 +1,14 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { useToast } from '@/hooks/use-toast';
 import { Checkbox } from '@/components/ui/checkbox';
-import Link from 'next/link';
+import { Input } from '@/components/ui/input';
+import { routes } from '@/config/routes';
+import { useToast } from '@/hooks/use-toast';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 interface LoginFormProps {
   dict: {
@@ -36,29 +37,44 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
     setIsLoading(true);
 
     try {
-      const { data: { user }, error: authError } = await supabase.auth.signInWithPassword({
+      const {
+        data: { user },
+        error: signInError,
+      } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
-      if (authError) throw authError;
+      if (signInError) {
+        throw signInError;
+      }
 
-      if (!user) throw new Error('User not found');
+      if (!user) {
+        throw new Error('No user found');
+      }
 
       const { data: userData, error: userError } = await supabase
-        .from('auth.users')
+        .from('users')
         .select('role')
         .eq('id', user.id)
         .single();
 
-      if (userError) throw userError;
+      if (userError) {
+        throw userError;
+      }
 
-      router.push(`/${lang}/${userData.role}/${user.id}`);
+      if (!userData?.role) {
+        throw new Error('User role not found');
+      }
+
+      router.push(routes.roleBasedRoute(lang, userData.role));
       router.refresh();
     } catch (error) {
+      console.error('Login error:', error);
       toast({
         title: 'Error',
-        description: 'Invalid credentials',
+        description:
+          error instanceof Error ? error.message : 'Failed to sign in',
         variant: 'destructive',
       });
     } finally {
@@ -76,6 +92,7 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
           onChange={e => setEmail(e.target.value)}
           required
           disabled={isLoading}
+          className="bg-background"
         />
         <Input
           type="password"
@@ -84,13 +101,14 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
           onChange={e => setPassword(e.target.value)}
           required
           disabled={isLoading}
+          className="bg-background"
         />
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Checkbox
               id="rememberMe"
               checked={rememberMe}
-              onCheckedChange={(checked) => setRememberMe(checked as boolean)}
+              onCheckedChange={checked => setRememberMe(checked as boolean)}
             />
             <label
               htmlFor="rememberMe"
@@ -100,7 +118,7 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
             </label>
           </div>
           <Link
-            href={`/${lang}/auth/forgot-password`}
+            href={routes.auth.forgotPassword(lang)}
             className="text-sm text-primary hover:underline"
           >
             {dict.forgotPassword}
