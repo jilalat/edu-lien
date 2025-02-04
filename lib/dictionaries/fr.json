@@ -41,48 +41,21 @@
     "form": {
       "title": "Connexion",
       "description": "Connectez-vous à votre compte",
-      "usernameLabel": "Email",
+      "identifierLabel": "Identifiant",
       "passwordLabel": "Mot de passe",
       "rememberMe": "Rester connecté",
       "submitButton": "SE CONNECTER",
       "forgotPassword": "Mot de passe oublié ?",
-      "forgotPasswordDescription": "Entrez votre email pour réinitialiser votre mot de passe"
-    }
-  },
-  "schoolPage": {
-    "welcomeMessage": "Tableau de bord de l'école",
-    "description": "Gérez votre école efficacement",
-    "sections": {
-      "userManagement": "Gestion des utilisateurs",
-      "analytics": "Analyses du système",
-      "settings": "Paramètres"
-    }
-  },
-  "teacherPage": {
-    "welcomeMessage": "Tableau de bord de l'enseignant",
-    "description": "Gérez vos classes et vos élèves",
-    "sections": {
-      "classes": "Mes classes",
-      "progress": "Progrès des élèves",
-      "resources": "Ressources pédagogiques"
-    }
-  },
-  "studentPage": {
-    "welcomeMessage": "Tableau de bord de l'élève",
-    "description": "Suivez votre parcours d'apprentissage",
-    "sections": {
-      "courses": "Mes cours",
-      "assignments": "Devoirs",
-      "progress": "Progrès"
-    }
-  },
-  "parentPage": {
-    "welcomeMessage": "Tableau de bord des parents",
-    "description": "Suivez l'éducation de vos enfants",
-    "sections": {
-      "progress": "Progrès des enfants",
-      "communications": "Communications",
-      "events": "Événements scolaires"
+      "forgotIdentifier": "Identifiant oublié ?",
+      "forgotPasswordDescription": "Entrez votre email pour réinitialiser votre mot de passe",
+      "forgotIdentifierDescription": "Entrez votre email pour récupérer votre identifiant",
+      "backToLogin": "Retour à la connexion",
+      "backToHome": "Retour à la page d'Accueil",
+      "emailLabel": "Email",
+      "newPassword": "Nouveau mot de passe",
+      "newPasswordDescription": "Créez votre nouveau mot de passe",
+      "newPasswordLabel": "Nouveau mot de passe",
+      "confirmPasswordLabel": "Confirmer le mot de passe"
     }
   }
 }
