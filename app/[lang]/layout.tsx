@@ -1,12 +1,11 @@
-import { Inter } from 'next/font/google';
-import { Header } from '@/components/layout/header/header';
 import { Providers } from '@/app/providers';
-import { Toaster } from '@/components/ui/toaster';
-import '../globals.css';
 import { Footer } from '@/components/layout/footer';
+import { Header } from '@/components/layout/header/header';
 import { Main } from '@/components/layout/main';
+import { Toaster } from '@/components/ui/toaster';
 import { generateStaticParams } from '@/lib/dictionaries/static-params';
-import Head from 'next/head';
+import { Inter } from 'next/font/google';
+import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

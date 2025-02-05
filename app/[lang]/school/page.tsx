@@ -21,9 +21,7 @@ export default async function SchoolDashboard({
 
   return (
     <div className="container py-8">
-      <h1 className="text-3xl font-bold mb-6">
-        {dict.schoolPage.welcomeMessage}
-      </h1>
+      <h1 className="text-3xl font-bold mb-6">{dict.schoolPage.title}</h1>
       <p className="text-muted-foreground mb-8">
         {dict.schoolPage.description}
       </p>
@@ -32,19 +30,16 @@ export default async function SchoolDashboard({
           <h2 className="text-xl font-semibold mb-4">
             {dict.schoolPage.sections.userManagement}
           </h2>
-          {/* Add user management interface */}
         </div>
         <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
           <h2 className="text-xl font-semibold mb-4">
             {dict.schoolPage.sections.analytics}
           </h2>
-          {/* Add analytics dashboard */}
         </div>
         <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
           <h2 className="text-xl font-semibold mb-4">
             {dict.schoolPage.sections.settings}
           </h2>
-          {/* Add system settings */}
         </div>
       </div>
     </div>

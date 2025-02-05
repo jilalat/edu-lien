@@ -72,19 +72,39 @@
   },
   "parentPage": {
     "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist."
+    "description": "Sorry, the page you are looking for does not exist.",
+    "sections": {
+      "progress": "Sorry, the page you are looking for does not exist.",
+      "communications": "Sorry, the page you are looking for does not exist.",
+      "events": "Sorry, the page you are looking for does not exist."
+    }
   },
   "schoolPage": {
     "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist."
+    "description": "Sorry, the page you are looking for does not exist.",
+    "sections": {
+      "userManagement": "Sorry, the page you are looking for does not exist.",
+      "analytics": "Sorry, the page you are looking for does not exist.",
+      "settings": "Sorry, the page you are looking for does not exist."
+    }
   },
   "studentPage": {
     "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist."
+    "description": "Sorry, the page you are looking for does not exist.",
+    "sections": {
+      "courses": "Sorry, the page you are looking for does not exist.",
+      "assignments": "Sorry, the page you are looking for does not exist.",
+      "progress": "Sorry, the page you are looking for does not exist."
+    }
   },
   "teacherPage": {
     "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist."
+    "description": "Sorry, the page you are looking for does not exist.",
+    "sections": {
+      "classes": "Sorry, the page you are looking for does not exist.",
+      "progress": "Sorry, the page you are looking for does not exist.",
+      "resources": "Sorry, the page you are looking for does not exist."
+    }
   },
   "notFound": {
     "title": "Page non trouvée",
