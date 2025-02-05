@@ -39,11 +39,12 @@
     "common": {
       "emailLabel": "البريد الإلكتروني",
       "backToLogin": "رجوع للدخول",
-      "backToHome": "رجوع للصفحة الرئيسية"
+      "backToHome": "رجوع للصفحة الرئيسية",
+      "resetButton": "Recevoir un lien"
     },
     "login": {
       "welcomeMessage": "مرحبا بك في فضائك الخاص",
-      "description": "نظام معلومات متكامل كيسمح بتطبيق طرق جديدة ديال تدبير المدرسة",
+      "welcomeDescription": "نظام معلومات متكامل كيسمح بتطبيق طرق جديدة ديال تدبير المدرسة",
       "title": "تسجيل الدخول",
       "description": "دخل لحسابك",
       "identifierLabel": "المعرف",
@@ -65,8 +66,25 @@
       "title": "كلمة السر الجديدة",
       "description": "دير كلمة سر جديدة",
       "newPasswordLabel": "كلمة السر الجديدة",
-      "confirmPasswordLabel": "أكد كلمة السر"
+      "confirmPasswordLabel": "أكد كلمة السر",
+      "submitButton": "RESET PASSWORD"
     }
+  },
+  "parentPage": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist."
+  },
+  "schoolPage": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist."
+  },
+  "studentPage": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist."
+  },
+  "teacherPage": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist."
   },
   "notFound": {
     "title": "الصفحة ما كايناش",

@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import { Header } from '@/components/layout/header/header';
-import { Providers } from '../providers';
+import { Providers } from '@/app/providers';
 import { Toaster } from '@/components/ui/toaster';
 import '../globals.css';
 import { Footer } from '@/components/layout/footer';
@@ -30,7 +30,7 @@ export default function LangLayout({
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" href="/assets/images/logo.png" />
+        <link rel="icon" href="../../assets/images/logo.png" type="image/png" />
       </head>
       <body
         className={`${inter.className} antialiased`}

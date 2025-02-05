@@ -39,12 +39,13 @@
     "common": {
       "emailLabel": "Email",
       "backToLogin": "Back to login",
-      "backToHome": "Back to Home"
+      "backToHome": "Back to Home",
+      "resetButton": "Recevoir un lien"
     },
     "login": {
       "welcomeMessage": "Welcome to your private space",
-      "description": "An integrated information system that enables new school management methods.",
-      "title": "Login",
+      "welcomeDescription": "An integrated information system that enables new school management methods.",
+      "title": "Welcome to your private space",
       "description": "Sign in to your account",
       "identifierLabel": "Identifier",
       "passwordLabel": "Password",
@@ -65,8 +66,25 @@
       "title": "New password",
       "description": "Create your new password",
       "newPasswordLabel": "New password",
-      "confirmPasswordLabel": "Confirm password"
+      "confirmPasswordLabel": "Confirm password",
+      "submitButton": "RESET PASSWORD"
     }
+  },
+  "parentPage": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist."
+  },
+  "schoolPage": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist."
+  },
+  "studentPage": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist."
+  },
+  "teacherPage": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist."
   },
   "notFound": {
     "title": "Page not found",

@@ -6,27 +6,24 @@ import { routes } from '@/config/routes';
 import Link from 'next/link';
 import { useState } from 'react';
 
-interface ForgotPasswordFormProps {
+interface ForgotFormProps {
   dict: {
     common: {
       emailLabel: string;
       backToLogin: string;
-    };
-    forgotPassword: {
-      submitButton: string;
+      resetButton: string;
     };
   };
   lang: string;
 }
 
-export function ForgotPasswordForm({ dict, lang }: ForgotPasswordFormProps) {
+export function ForgotForm({ dict, lang }: ForgotFormProps) {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    // Add password recovery logic here
     setIsLoading(false);
   };
 
@@ -42,7 +39,7 @@ export function ForgotPasswordForm({ dict, lang }: ForgotPasswordFormProps) {
       />
       <div className="flex gap-4">
         <Button type="submit" className="flex-1" disabled={isLoading}>
-          {isLoading ? 'Loading...' : dict.forgotPassword.submitButton}
+          {isLoading ? 'Loading...' : dict.common.resetButton}
         </Button>
         <Link href={routes.auth.login(lang)} className="flex-1">
           <Button variant="outline" className="w-full">
