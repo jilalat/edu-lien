@@ -35,10 +35,15 @@
       ]
     }
   },
-  "loginPage": {
-    "welcomeMessage": "Bienvenue dans votre espace privé",
-    "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
-    "form": {
+  "auth": {
+    "common": {
+      "emailLabel": "Email",
+      "backToLogin": "Retour à la connexion",
+      "backToHome": "Retour à la page d'Accueil"
+    },
+    "login": {
+      "welcomeMessage": "Bienvenue dans votre espace privé",
+      "description": "Un système d'information intégré qui permet la mise en place de nouvelles méthodes de gestion scolaire.",
       "title": "Connexion",
       "description": "Connectez-vous à votre compte",
       "identifierLabel": "Identifiant",
@@ -46,14 +51,19 @@
       "rememberMe": "Rester connecté",
       "submitButton": "SE CONNECTER",
       "forgotPassword": "Mot de passe oublié ?",
-      "forgotIdentifier": "Identifiant oublié ?",
-      "forgotPasswordDescription": "Entrez votre email pour réinitialiser votre mot de passe",
-      "forgotIdentifierDescription": "Entrez votre email pour récupérer votre identifiant",
-      "backToLogin": "Retour à la connexion",
-      "backToHome": "Retour à la page d'Accueil",
-      "emailLabel": "Email",
-      "newPassword": "Nouveau mot de passe",
-      "newPasswordDescription": "Créez votre nouveau mot de passe",
+      "forgotIdentifier": "Identifiant oublié ?"
+    },
+    "forgotPassword": {
+      "title": "Mot de passe oublié",
+      "description": "Entrez votre email pour réinitialiser votre mot de passe"
+    },
+    "forgotIdentifier": {
+      "title": "Identifiant oublié",
+      "description": "Entrez votre email pour récupérer votre identifiant"
+    },
+    "newPassword": {
+      "title": "Nouveau mot de passe",
+      "description": "Créez votre nouveau mot de passe",
       "newPasswordLabel": "Nouveau mot de passe",
       "confirmPasswordLabel": "Confirmer le mot de passe"
     }

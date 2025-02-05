@@ -35,10 +35,15 @@
       ]
     }
   },
-  "loginPage": {
-    "welcomeMessage": "مرحباً بك في مساحتك الخاصة",
-    "description": "نظام معلومات متكامل يتيح تطبيق أساليب جديدة لإدارة المدرسة",
-    "form": {
+  "auth": {
+    "common": {
+      "emailLabel": "البريد الإلكتروني",
+      "backToLogin": "العودة لتسجيل الدخول",
+      "backToHome": "العودة للرئيسية"
+    },
+    "login": {
+      "welcomeMessage": "مرحباً بك في مساحتك الخاصة",
+      "description": "نظام معلومات متكامل يتيح تطبيق أساليب جديدة لإدارة المدرسة",
       "title": "تسجيل الدخول",
       "description": "الدخول إلى حسابك",
       "identifierLabel": "المعرف",
@@ -46,14 +51,19 @@
       "rememberMe": "تذكرني",
       "submitButton": "تسجيل الدخول",
       "forgotPassword": "نسيت كلمة المرور؟",
-      "forgotIdentifier": "نسيت المعرف؟",
-      "forgotPasswordDescription": "أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور",
-      "forgotIdentifierDescription": "أدخل بريدك الإلكتروني لاسترداد المعرف",
-      "backToLogin": "العودة لتسجيل الدخول",
-      "backToHome": "العودة للرئيسية",
-      "emailLabel": "البريد الإلكتروني",
-      "newPassword": "كلمة المرور الجديدة",
-      "newPasswordDescription": "إنشاء كلمة مرور جديدة",
+      "forgotIdentifier": "نسيت المعرف؟"
+    },
+    "forgotPassword": {
+      "title": "نسيت كلمة المرور",
+      "description": "أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور"
+    },
+    "forgotIdentifier": {
+      "title": "نسيت المعرف",
+      "description": "أدخل بريدك الإلكتروني لاسترداد المعرف"
+    },
+    "newPassword": {
+      "title": "كلمة المرور الجديدة",
+      "description": "إنشاء كلمة مرور جديدة",
       "newPasswordLabel": "كلمة المرور الجديدة",
       "confirmPasswordLabel": "تأكيد كلمة المرور"
     }

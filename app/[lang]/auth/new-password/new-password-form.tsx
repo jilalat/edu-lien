@@ -9,9 +9,11 @@ import { useState } from 'react';
 
 interface NewPasswordFormProps {
   dict: {
-    newPasswordLabel: string;
-    confirmPasswordLabel: string;
-    submitButton: string;
+    newPassword: {
+      newPasswordLabel: string;
+      confirmPasswordLabel: string;
+      submitButton: string;
+    };
   };
   lang: string;
 }
@@ -41,7 +43,7 @@ export function NewPasswordForm({ dict, lang }: NewPasswordFormProps) {
       <div className="relative">
         <Input
           type={showNewPassword ? 'text' : 'password'}
-          placeholder={dict.newPasswordLabel}
+          placeholder={dict.newPassword.newPasswordLabel}
           value={newPassword}
           onChange={e => setNewPassword(e.target.value)}
           required
@@ -62,7 +64,7 @@ export function NewPasswordForm({ dict, lang }: NewPasswordFormProps) {
       <div className="relative">
         <Input
           type={showConfirmPassword ? 'text' : 'password'}
-          placeholder={dict.confirmPasswordLabel}
+          placeholder={dict.newPassword.confirmPasswordLabel}
           value={confirmPassword}
           onChange={e => setConfirmPassword(e.target.value)}
           required
@@ -81,7 +83,7 @@ export function NewPasswordForm({ dict, lang }: NewPasswordFormProps) {
         </button>
       </div>
       <Button type="submit" className="w-full" disabled={isLoading}>
-        {isLoading ? 'Loading...' : dict.submitButton}
+        {isLoading ? 'Loading...' : dict.newPassword.submitButton}
       </Button>
     </form>
   );

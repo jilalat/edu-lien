@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -14,8 +9,13 @@ const nextConfig = {
       },
     ],
   },
-  assetPrefix: '/',
-  basePath: '',
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(png|jpg|gif|svg)$/i,
+      type: 'asset/resource'
+    });
+    return config;
+  }
 };
 
 module.exports = nextConfig;

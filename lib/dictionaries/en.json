@@ -35,10 +35,15 @@
       ]
     }
   },
-  "loginPage": {
-    "welcomeMessage": "Welcome to your private space",
-    "description": "An integrated information system that enables new school management methods.",
-    "form": {
+  "auth": {
+    "common": {
+      "emailLabel": "Email",
+      "backToLogin": "Back to login",
+      "backToHome": "Back to Home"
+    },
+    "login": {
+      "welcomeMessage": "Welcome to your private space",
+      "description": "An integrated information system that enables new school management methods.",
       "title": "Login",
       "description": "Sign in to your account",
       "identifierLabel": "Identifier",
@@ -46,14 +51,19 @@
       "rememberMe": "Keep me signed in",
       "submitButton": "SIGN IN",
       "forgotPassword": "Forgot password?",
-      "forgotIdentifier": "Forgot identifier?",
-      "forgotPasswordDescription": "Enter your email to reset your password",
-      "forgotIdentifierDescription": "Enter your email to recover your identifier",
-      "backToLogin": "Back to login",
-      "backToHome": "Back to Home",
-      "emailLabel": "Email",
-      "newPassword": "New password",
-      "newPasswordDescription": "Create your new password",
+      "forgotIdentifier": "Forgot identifier?"
+    },
+    "forgotPassword": {
+      "title": "Forgot password",
+      "description": "Enter your email to reset your password"
+    },
+    "forgotIdentifier": {
+      "title": "Forgot identifier",
+      "description": "Enter your email to recover your identifier"
+    },
+    "newPassword": {
+      "title": "New password",
+      "description": "Create your new password",
       "newPasswordLabel": "New password",
       "confirmPasswordLabel": "Confirm password"
     }

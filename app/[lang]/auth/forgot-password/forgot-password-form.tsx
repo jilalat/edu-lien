@@ -8,9 +8,13 @@ import { useState } from 'react';
 
 interface ForgotPasswordFormProps {
   dict: {
-    emailLabel: string;
-    submitButton: string;
-    backToLogin: string;
+    common: {
+      emailLabel: string;
+      backToLogin: string;
+    };
+    forgotPassword: {
+      submitButton: string;
+    };
   };
   lang: string;
 }
@@ -22,7 +26,7 @@ export function ForgotPasswordForm({ dict, lang }: ForgotPasswordFormProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    // Add password reset logic here
+    // Add password recovery logic here
     setIsLoading(false);
   };
 
@@ -30,7 +34,7 @@ export function ForgotPasswordForm({ dict, lang }: ForgotPasswordFormProps) {
     <form onSubmit={handleSubmit} className="space-y-4">
       <Input
         type="email"
-        placeholder={dict.emailLabel}
+        placeholder={dict.common.emailLabel}
         value={email}
         onChange={e => setEmail(e.target.value)}
         required
@@ -38,11 +42,11 @@ export function ForgotPasswordForm({ dict, lang }: ForgotPasswordFormProps) {
       />
       <div className="flex gap-4">
         <Button type="submit" className="flex-1" disabled={isLoading}>
-          {isLoading ? 'Loading...' : dict.submitButton}
+          {isLoading ? 'Loading...' : dict.forgotPassword.submitButton}
         </Button>
         <Link href={routes.auth.login(lang)} className="flex-1">
           <Button variant="outline" className="w-full">
-            {dict.backToLogin}
+            {dict.common.backToLogin}
           </Button>
         </Link>
       </div>

@@ -10,16 +10,20 @@ import { useState } from 'react';
 
 interface LoginFormProps {
   dict: {
-    title: string;
-    description: string;
-    identifierLabel: string;
-    passwordLabel: string;
-    rememberMe: string;
-    submitButton: string;
-    forgotPassword: string;
-    forgotIdentifier: string;
-    emailLabel: string;
-    backToHome: string;
+    common: {
+      emailLabel: string;
+      backToHome: string;
+    };
+    login: {
+      title: string;
+      description: string;
+      identifierLabel: string;
+      passwordLabel: string;
+      rememberMe: string;
+      submitButton: string;
+      forgotPassword: string;
+      forgotIdentifier: string;
+    };
   };
   lang: string;
 }
@@ -43,7 +47,7 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
       <form onSubmit={handleSubmit} className="space-y-4">
         <Input
           type="text"
-          placeholder={dict.identifierLabel}
+          placeholder={dict.login.identifierLabel}
           value={identifier}
           onChange={e => setIdentifier(e.target.value)}
           required
@@ -54,12 +58,12 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
           href={routes.auth.forgotIdentifier(lang)}
           className="text-sm text-primary hover:underline block text-right"
         >
-          {dict.forgotIdentifier}
+          {dict.login.forgotIdentifier}
         </Link>
         <div className="relative">
           <Input
             type={showPassword ? 'text' : 'password'}
-            placeholder={dict.passwordLabel}
+            placeholder={dict.login.passwordLabel}
             value={password}
             onChange={e => setPassword(e.target.value)}
             required
@@ -82,7 +86,7 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
           href={routes.auth.forgotPassword(lang)}
           className="text-sm text-primary hover:underline block text-right"
         >
-          {dict.forgotPassword}
+          {dict.login.forgotPassword}
         </Link>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 rtl:space-x-reverse">
@@ -95,18 +99,18 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
               htmlFor="rememberMe"
               className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
             >
-              {dict.rememberMe}
+              {dict.login.rememberMe}
             </label>
           </div>
         </div>
 
         <div className="flex gap-4">
           <Button type="submit" className="flex-1" disabled={isLoading}>
-            {isLoading ? 'Loading...' : dict.submitButton}
+            {isLoading ? 'Loading...' : dict.login.submitButton}
           </Button>
           <Link href={routes.home(lang)} className="flex-1">
             <Button variant="outline" className="w-full">
-              {dict.backToHome}
+              {dict.common.backToHome}
             </Button>
           </Link>
         </div>

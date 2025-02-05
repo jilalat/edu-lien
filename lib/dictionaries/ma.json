@@ -35,10 +35,15 @@
       ]
     }
   },
-  "loginPage": {
-    "welcomeMessage": "مرحبا بك في فضائك الخاص",
-    "description": "نظام معلومات متكامل كيسمح بتطبيق طرق جديدة ديال تدبير المدرسة",
-    "form": {
+  "auth": {
+    "common": {
+      "emailLabel": "البريد الإلكتروني",
+      "backToLogin": "رجوع للدخول",
+      "backToHome": "رجوع للصفحة الرئيسية"
+    },
+    "login": {
+      "welcomeMessage": "مرحبا بك في فضائك الخاص",
+      "description": "نظام معلومات متكامل كيسمح بتطبيق طرق جديدة ديال تدبير المدرسة",
       "title": "تسجيل الدخول",
       "description": "دخل لحسابك",
       "identifierLabel": "المعرف",
@@ -46,14 +51,19 @@
       "rememberMe": "بقيني متصل",
       "submitButton": "دخول",
       "forgotPassword": "نسيتي كلمة السر؟",
-      "forgotIdentifier": "نسيتي المعرف؟",
-      "forgotPasswordDescription": "دخل البريد الإلكتروني باش تعاود ضبط كلمة السر",
-      "forgotIdentifierDescription": "دخل البريد الإلكتروني باش ترجع المعرف",
-      "backToLogin": "رجوع للدخول",
-      "backToHome": "رجوع للصفحة الرئيسية",
-      "emailLabel": "البريد الإلكتروني",
-      "newPassword": "كلمة السر الجديدة",
-      "newPasswordDescription": "دير كلمة سر جديدة",
+      "forgotIdentifier": "نسيتي المعرف؟"
+    },
+    "forgotPassword": {
+      "title": "نسيت كلمة السر",
+      "description": "دخل البريد الإلكتروني باش تعاود ضبط كلمة السر"
+    },
+    "forgotIdentifier": {
+      "title": "نسيت المعرف",
+      "description": "دخل البريد الإلكتروني باش ترجع المعرف"
+    },
+    "newPassword": {
+      "title": "كلمة السر الجديدة",
+      "description": "دير كلمة سر جديدة",
       "newPasswordLabel": "كلمة السر الجديدة",
       "confirmPasswordLabel": "أكد كلمة السر"
     }
