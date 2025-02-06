@@ -90,7 +90,6 @@
             "description": "Upcoming Events"
           }
         },
-
         "quickAccess": {
           "messages": {
             "title": "New messages from teachers",
@@ -537,7 +536,6 @@
       }
     }
   },
-
   "schoolPage": {
     "title": "School Administration",
     "welcome": "Welcome, Admin!",

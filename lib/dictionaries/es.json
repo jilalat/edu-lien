@@ -4,8 +4,8 @@
     "languageSelection": "Seleccionar idioma",
     "login": "Acceder a mi cuenta",
     "theme": {
-      "lightMode": "Cambiar a modo claro",
-      "darkMode": "Cambiar a modo oscuro"
+      "lightMode": "Cambiar al modo claro",
+      "darkMode": "Cambiar al modo oscuro"
     }
   },
   "footer": {
@@ -18,18 +18,18 @@
       "items": [
         {
           "title": "Aprendizaje personalizado",
-          "description": "Rutas adaptadas a tus necesidades"
+          "description": "Camino adaptado a tus necesidades"
         },
         {
           "title": "Aprendizaje inteligente",
-          "description": "Recomendaciones de aprendizaje con IA"
+          "description": "Recomendaciones de aprendizaje impulsadas por IA"
         },
         {
           "title": "Colaboración global",
           "description": "Conéctate con estudiantes de todo el mundo"
         },
         {
-          "title": "Recursos abundantes",
+          "title": "Recursos ricos",
           "description": "Accede a una biblioteca diversa de contenido"
         }
       ]
@@ -37,73 +37,841 @@
   },
   "auth": {
     "common": {
-      "emailLabel": "Email",
+      "emailLabel": "Correo electrónico",
       "backToLogin": "Volver al inicio de sesión",
       "backToHome": "Volver al inicio",
-      "resetButton": "Recevoir un lien"
+      "resetButton": "Recibir un enlace"
     },
     "login": {
       "welcomeMessage": "Bienvenido a tu espacio privado",
-      "welcomeDescription": "Un sistema de información integrado que permite nuevos métodos de gestión escolar.",
-      "title": "Iniciar sesión",
-      "description": "Accede a tu cuenta",
+      "welcomeDescription": "Un sistema integrado de información que permite nuevos métodos de gestión escolar.",
+      "title": "Bienvenido a tu espacio privado",
+      "description": "Inicia sesión en tu cuenta",
       "identifierLabel": "Identificador",
       "passwordLabel": "Contraseña",
-      "rememberMe": "Mantener sesión iniciada",
+      "rememberMe": "Mantenerme conectado",
       "submitButton": "INICIAR SESIÓN",
       "forgotPassword": "¿Olvidaste tu contraseña?",
       "forgotIdentifier": "¿Olvidaste tu identificador?"
     },
     "forgotPassword": {
-      "title": "Contraseña olvidada",
-      "description": "Ingresa tu email para restablecer tu contraseña"
+      "title": "Olvidé mi contraseña",
+      "description": "Ingresa tu correo electrónico para restablecer tu contraseña"
     },
     "forgotIdentifier": {
-      "title": "Identificador olvidado",
-      "description": "Ingresa tu email para recuperar tu identificador"
+      "title": "Olvidé mi identificador",
+      "description": "Ingresa tu correo electrónico para recuperar tu identificador"
     },
     "newPassword": {
       "title": "Nueva contraseña",
       "description": "Crea tu nueva contraseña",
       "newPasswordLabel": "Nueva contraseña",
       "confirmPasswordLabel": "Confirmar contraseña",
-      "submitButton": "RESET PASSWORD"
-    }
-  },
-  "parentPage": {
-    "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist.",
-    "sections": {
-      "progress": "Sorry, the page you are looking for does not exist.",
-      "communications": "Sorry, the page you are looking for does not exist.",
-      "events": "Sorry, the page you are looking for does not exist."
-    }
-  },
-  "schoolPage": {
-    "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist.",
-    "sections": {
-      "userManagement": "Sorry, the page you are looking for does not exist.",
-      "analytics": "Sorry, the page you are looking for does not exist.",
-      "settings": "Sorry, the page you are looking for does not exist."
+      "submitButton": "RESTABLECER CONTRASEÑA"
     }
   },
   "studentPage": {
-    "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist.",
+    "title": "Panel del estudiante",
+    "welcome": "¡Bienvenido de nuevo!",
     "sections": {
-      "courses": "Sorry, the page you are looking for does not exist.",
-      "assignments": "Sorry, the page you are looking for does not exist.",
-      "progress": "Sorry, the page you are looking for does not exist."
+      "dashboardOverview": {
+        "title": "Resumen del panel",
+        "upcomingActivities": {
+          "homework": {
+            "title": "Tareas pendientes",
+            "description": "Tareas pendientes"
+          },
+          "exams": {
+            "title": "Próximos exámenes",
+            "description": "Próximos exámenes"
+          },
+          "events": {
+            "title": "Próximos eventos",
+            "description": "Próximos eventos"
+          }
+        },
+        "quickAccess": {
+          "messages": {
+            "title": "Nuevos mensajes de los profesores",
+            "description": "Nuevos mensajes de los profesores"
+          },
+          "notifications": {
+            "title": "3 notificaciones no leídas",
+            "description": "3 notificaciones no leídas"
+          },
+          "learningResources": {
+            "title": "Acceder a materiales de aprendizaje",
+            "description": "Acceder a materiales de aprendizaje"
+          }
+        },
+        "gamification": {
+          "points": {
+            "title": "Puntos totales obtenidos",
+            "description": "Puntos totales obtenidos"
+          },
+          "badges": {
+            "title": "Insignias logradas",
+            "description": "Insignias logradas"
+          },
+          "attendanceReward": {
+            "title": "Recompensa por asistencia",
+            "description": "Recompensa por asistencia"
+          }
+        }
+      },
+      "homeworkTracker": {
+        "title": "Seguimiento de tareas",
+        "viewAll": "Ver todas las asignaciones",
+        "submitAssignment": "Enviar tarea",
+        "trackProgress": "Seguir progreso",
+        "attachments": {
+          "uploadFile": "Subir archivo",
+          "supportedFormats": "Formatos admitidos: PDF, DOCX, JPG, PNG, MP4"
+        },
+        "reminders": {
+          "aiReminders": "Recordatorios impulsados por IA",
+          "approachingDeadlines": "Plazos próximos"
+        },
+        "assignments": [
+          {
+            "title": "Tarea de matemáticas",
+            "deadline": "Para mañana",
+            "subject": "Matemáticas",
+            "status": "Pendiente"
+          },
+          {
+            "title": "Proyecto de ciencias",
+            "deadline": "Para la próxima semana",
+            "subject": "Ciencias",
+            "status": "En progreso"
+          }
+        ]
+      },
+      "learningResources": {
+        "title": "Recursos de aprendizaje",
+        "accessMaterials": "Acceder a materiales de clase",
+        "organizeBy": {
+          "subject": "Organizar por asignatura",
+          "date": "Organizar por fecha",
+          "priority": "Organizar por prioridad"
+        },
+        "offlineAccess": "Descargar para acceso sin conexión",
+        "categories": [
+          "Notas de clase",
+          "E-Books",
+          "Lecciones en video",
+          "Pruebas de práctica",
+          "Materiales adicionales"
+        ]
+      },
+      "classSchedule": {
+        "title": "Horario de clases",
+        "dailyTimetable": "Horario diario",
+        "upcomingLessons": "Próximas lecciones",
+        "syncCalendars": "Sincronizar con calendario personal",
+        "calendarOptions": ["Google Calendar", "Apple Calendar", "Outlook"]
+      },
+      "progressReports": {
+        "title": "Informes de progreso",
+        "viewGrades": "Ver calificaciones",
+        "attendance": "Registro de asistencia",
+        "teacherFeedback": "Retroalimentación del profesor",
+        "charts": {
+          "academicPerformance": "Gráfico de rendimiento académico",
+          "attendanceTrends": "Gráfico de tendencias de asistencia"
+        },
+        "aiInsights": {
+          "areasForImprovement": "Áreas para mejorar",
+          "suggestions": "Sugerencias personalizadas"
+        },
+        "stats": {
+          "attendancePercentage": "95%",
+          "completedAssignments": "23/25",
+          "averageGrade": "A"
+        }
+      },
+      "peerCollaboration": {
+        "title": "Colaboración entre compañeros",
+        "groupChats": "Unirse a chats grupales",
+        "forums": "Participar en foros",
+        "fileSharing": "Compartir archivos",
+        "realTimeTools": "Herramientas de colaboración en tiempo real",
+        "features": [
+          "Chat de texto",
+          "Llamadas de voz",
+          "Compartir pantalla",
+          "Coedición de documentos"
+        ]
+      }
+    }
+  },
+  "parentPage": {
+    "title": "Panel de padres",
+    "welcome": "¡Bienvenido de nuevo, padre!",
+    "sections": {
+      "dashboardOverview": {
+        "title": "Resumen del panel",
+        "childOverview": {
+          "homework": {
+            "title": "Tareas del niño",
+            "description": "Monitorear tareas asignadas y plazos."
+          },
+          "grades": {
+            "title": "Calificaciones del niño",
+            "description": "Ver calificaciones recientes y tendencias de rendimiento."
+          },
+          "attendance": {
+            "title": "Asistencia del niño",
+            "description": "Seguimiento de registros de asistencia y actualizaciones."
+          }
+        },
+        "notifications": {
+          "upcomingEvents": {
+            "title": "Próximos eventos",
+            "description": "Notificaciones para eventos escolares."
+          },
+          "teacherMessages": {
+            "title": "Mensajes de los profesores",
+            "description": "Recibir mensajes de los profesores."
+          },
+          "behavioralUpdates": {
+            "title": "Actualizaciones de comportamiento",
+            "description": "Mantente informado sobre actualizaciones de comportamiento."
+          }
+        }
+      },
+      "performanceTracking": {
+        "title": "Seguimiento de rendimiento",
+        "viewGrades": "Ver calificaciones",
+        "attendanceRecord": "Registro de asistencia",
+        "teacherComments": "Retroalimentación del profesor",
+        "charts": {
+          "academicPerformance": "Gráfico de rendimiento académico",
+          "attendanceTrends": "Gráfico de tendencias de asistencia"
+        },
+        "aiInsights": {
+          "areasForImprovement": "Áreas para mejorar",
+          "suggestions": "Sugerencias personalizadas"
+        },
+        "stats": {
+          "attendancePercentage": "95%",
+          "completedAssignments": "23/25",
+          "averageGrade": "A"
+        }
+      },
+      "homeworkTracking": {
+        "title": "Seguimiento de tareas",
+        "monitorAssignments": "Monitorear tareas asignadas",
+        "receiveAlerts": "Recibir alertas por tareas no enviadas",
+        "assignments": [
+          {
+            "title": "Tarea de matemáticas",
+            "deadline": "Para mañana",
+            "subject": "Matemáticas",
+            "status": "Pendiente"
+          },
+          {
+            "title": "Proyecto de ciencias",
+            "deadline": "Para la próxima semana",
+            "subject": "Ciencias",
+            "status": "En progreso"
+          }
+        ]
+      },
+      "communication": {
+        "title": "Comunicación",
+        "directMessaging": "Mensajería directa con profesores",
+        "languageTranslation": {
+          "availableLanguages": ["Árabe", "Francés", "Inglés"],
+          "description": "Traducir mensajes entre árabe, francés e inglés."
+        },
+        "announcements": {
+          "title": "Anuncios escolares",
+          "description": "Ver anuncios importantes de la escuela."
+        }
+      },
+      "childSafetyAlerts": {
+        "title": "Alertas de seguridad infantil",
+        "missedSchool": "Notificar si el niño falta a la escuela",
+        "earlyDeparture": "Notificar si el niño se va temprano",
+        "healthUpdates": "Actualizaciones de estado de salud",
+        "busSchedule": "Alertas de horarios de autobús"
+      },
+      "feeManagement": {
+        "title": "Gestión de cuotas",
+        "viewFees": "Ver detalles de cuotas",
+        "makePayments": "Realizar pagos en línea",
+        "reminders": "Recibir recordatorios para fechas límite",
+        "feeDetails": [
+          {
+            "term": "Semestre de otoño",
+            "amount": "$500",
+            "dueDate": "15 de noviembre",
+            "status": "Pendiente"
+          },
+          {
+            "term": "Semestre de primavera",
+            "amount": "$600",
+            "dueDate": "15 de marzo",
+            "status": "Pagado"
+          }
+        ]
+      },
+      "activityLog": {
+        "title": "Registro de actividades",
+        "description": "Seguimiento de las actividades diarias de tu hijo en la escuela.",
+        "features": [
+          "Participación en clase",
+          "Actividades extracurriculares",
+          "Visitas a la biblioteca"
+        ]
+      },
+      "parentEngagement": {
+        "title": "Compromiso de los padres",
+        "description": "Participa en actividades escolares y mantente conectado.",
+        "features": [
+          "Oportunidades de voluntariado",
+          "Reuniones de padres y maestros",
+          "Encuestas de retroalimentación"
+        ]
+      },
+      "resourceCenter": {
+        "title": "Centro de recursos",
+        "description": "Accede a recursos útiles para apoyar la educación de tu hijo.",
+        "categories": [
+          "Consejos de estudio",
+          "Guías para padres",
+          "Políticas escolares"
+        ]
+      },
+      "extracurricularActivities": {
+        "title": "Actividades extracurriculares",
+        "trackActivities": "Seguimiento de la participación de tu hijo en actividades extracurriculares.",
+        "upcomingEvents": "Ver próximos eventos y competiciones.",
+        "performanceUpdates": "Recibe actualizaciones sobre el rendimiento de tu hijo en actividades."
+      },
+      "healthAndWellness": {
+        "title": "Salud y bienestar",
+        "healthUpdates": "Recibe actualizaciones sobre la salud de tu hijo del enfermero escolar.",
+        "mentalHealthResources": "Accede a recursos para apoyar la salud mental de tu hijo.",
+        "nutritionTips": "Obtén consejos sobre alimentación saludable y nutrición para tu hijo."
+      },
+      "schoolResources": {
+        "title": "Recursos escolares",
+        "libraryAccess": "Acceso a los recursos digitales de la biblioteca escolar.",
+        "tutoringServices": "Encuentra información sobre servicios de tutoría disponibles.",
+        "parentWorkshops": "Inscríbete a talleres para apoyar la educación de tu hijo."
+      }
     }
   },
   "teacherPage": {
-    "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist.",
+    "title": "Panel del profesor",
+    "welcome": "¡Bienvenido de nuevo, profesor!",
     "sections": {
-      "classes": "Sorry, the page you are looking for does not exist.",
-      "progress": "Sorry, the page you are looking for does not exist.",
-      "resources": "Sorry, the page you are looking for does not exist."
+      "dashboardOverview": {
+        "title": "Resumen del panel",
+        "upcomingActivities": {
+          "classes": {
+            "title": "Resumen de clases",
+            "description": "Resumen de clases"
+          },
+          "upcomingLessons": {
+            "title": "Próximas lecciones",
+            "description": "Próximas lecciones"
+          },
+          "events": {
+            "title": "Próximos eventos",
+            "description": "Próximos eventos"
+          }
+        },
+        "quickAccess": {
+          "messages": {
+            "title": "Enviar mensajes",
+            "description": "Enviar mensajes"
+          },
+          "notifications": {
+            "title": "Ver notificaciones",
+            "description": "Ver notificaciones"
+          },
+          "attendanceTracking": {
+            "title": "Seguimiento de asistencia",
+            "description": "Seguimiento de asistencia"
+          }
+        }
+      },
+      "homeworkManagement": {
+        "title": "Gestión de tareas",
+        "assignHomework": "Asignar tarea",
+        "reviewSubmissions": "Revisar envíos",
+        "automatedGrading": "Calificación automatizada",
+        "reminders": "Recordatorios impulsados por IA",
+        "assignments": [
+          {
+            "title": "Tarea de matemáticas - Capítulo 3",
+            "subject": "Matemáticas",
+            "deadline": "Fecha límite: 15 de diciembre",
+            "status": "Asignado"
+          },
+          {
+            "title": "Proyecto de ciencias - Ecosistemas",
+            "subject": "Ciencias",
+            "deadline": "Fecha límite: 10 de enero",
+            "status": "En progreso"
+          }
+        ]
+      },
+      "classMaterials": {
+        "title": "Materiales de clase",
+        "uploadResources": "Subir recursos",
+        "organizeBy": {
+          "class": "Organizar por clase",
+          "subject": "Organizar por asignatura"
+        },
+        "resources": [
+          {
+            "name": "Plan de lección de matemáticas - Semana 4",
+            "type": "Plan de lección",
+            "uploadedBy": "Sr. Smith",
+            "dateUploaded": "20 de noviembre"
+          },
+          {
+            "name": "Hoja de trabajo de ciencias - Capítulo 5",
+            "type": "Hoja de trabajo",
+            "uploadedBy": "Sra. Johnson",
+            "dateUploaded": "22 de noviembre"
+          }
+        ]
+      },
+      "attendanceAndGrades": {
+        "title": "Asistencia y calificaciones",
+        "markAttendance": "Marcar asistencia",
+        "inputGrades": "Ingresar calificaciones",
+        "shareProgressReports": "Compartir informes de progreso",
+        "viewAnalytics": "Ver análisis",
+        "students": [
+          {
+            "name": "John Doe",
+            "class": "8º grado",
+            "attendancePercentage": "95%",
+            "averageGrade": "A"
+          },
+          {
+            "name": "Jane Smith",
+            "class": "7º grado",
+            "attendancePercentage": "88%",
+            "averageGrade": "B+"
+          }
+        ]
+      },
+      "communication": {
+        "title": "Comunicación",
+        "sendAnnouncements": "Enviar anuncios",
+        "messageParents": "Mensajear a los padres",
+        "messageStudents": "Mensajear a los estudiantes",
+        "languageTranslation": "Traducir mensajes (árabe, francés, inglés)",
+        "recentMessages": [
+          {
+            "recipient": "Padre de John Doe",
+            "subject": "Próximo examen de ciencias",
+            "timestamp": "1 de diciembre"
+          },
+          {
+            "recipient": "Clase 8A",
+            "subject": "Recordatorio de tarea",
+            "timestamp": "30 de noviembre"
+          }
+        ]
+      },
+      "lessonPlanning": {
+        "title": "Herramientas de planificación de lecciones",
+        "createLessonPlans": "Crear planes de lección",
+        "shareWithAdmins": "Compartir con administradores escolares",
+        "shareWithStudents": "Compartir con estudiantes",
+        "syncCalendars": "Sincronizar planes de lección con el calendario",
+        "lessonPlans": [
+          {
+            "title": "Lección de matemáticas - Conceptos básicos de álgebra",
+            "date": "5 de diciembre",
+            "class": "8º grado"
+          },
+          {
+            "title": "Lección de ciencias - Ecosistemas",
+            "date": "7 de diciembre",
+            "class": "7º grado"
+          }
+        ]
+      },
+      "professionalDevelopment": {
+        "title": "Desarrollo profesional",
+        "courses": "Ver cursos disponibles",
+        "certifications": "Seguimiento de certificaciones",
+        "feedback": "Proporcionar retroalimentación sobre programas de formación",
+        "coursesList": [
+          {
+            "title": "Técnicas avanzadas de enseñanza",
+            "startDate": "15 de enero",
+            "endDate": "15 de febrero",
+            "status": "Inscrito"
+          },
+          {
+            "title": "Uso de IA en la educación",
+            "startDate": "1 de marzo",
+            "endDate": "30 de marzo",
+            "status": "Completado"
+          }
+        ]
+      },
+      "schoolAnnouncements": {
+        "title": "Anuncios escolares",
+        "viewAllAnnouncements": "Ver todos los anuncios",
+        "postNewAnnouncement": "Publicar nuevo anuncio",
+        "announcements": [
+          {
+            "title": "Programa de vacaciones de invierno",
+            "date": "1 de diciembre",
+            "content": "La escuela estará cerrada del 20 de diciembre al 5 de enero."
+          },
+          {
+            "title": "Reunión de padres y maestros",
+            "date": "25 de noviembre",
+            "content": "Únete a nosotros para una reunión el 28 de noviembre a las 15h."
+          }
+        ]
+      }
+    }
+  },
+  "schoolPage": {
+    "title": "Administración escolar",
+    "welcome": "¡Bienvenido, administrador!",
+    "sections": {
+      "overview": {
+        "title": "Resumen de la escuela",
+        "stats": {
+          "totalStudents": "1200",
+          "totalTeachers": "45",
+          "totalParents": "1100",
+          "totalAdmins": "10",
+          "averageAttendance": "94%",
+          "activeClasses": "30",
+          "monthlyEnrollments": "30",
+          "pendingFeePayments": "$15,000",
+          "upcomingEvents": "5"
+        },
+        "quickActions": {
+          "addNewStudent": "Agregar nuevo estudiante",
+          "addNewTeacher": "Agregar nuevo profesor",
+          "sendAnnouncement": "Enviar anuncio escolar",
+          "generateReport": "Generar informe escolar"
+        }
+      },
+      "management": {
+        "title": "Gestión de usuarios",
+        "categories": [
+          {
+            "name": "Estudiantes",
+            "actions": [
+              "Agregar estudiante",
+              "Editar perfil de estudiante",
+              "Ver rendimiento del estudiante",
+              "Asignar a clase"
+            ]
+          },
+          {
+            "name": "Profesores",
+            "actions": [
+              "Agregar profesor",
+              "Editar perfil de profesor",
+              "Asignar materias",
+              "Ver horario del profesor"
+            ]
+          },
+          {
+            "name": "Padres",
+            "actions": [
+              "Agregar padre",
+              "Enlazar con estudiante",
+              "Ver retroalimentación de padres",
+              "Enviar notificaciones"
+            ]
+          },
+          {
+            "name": "Administradores",
+            "actions": [
+              "Agregar administrador",
+              "Editar perfil de administrador",
+              "Asignar roles",
+              "Gestionar permisos"
+            ]
+          }
+        ],
+        "features": [
+          "Agregar, eliminar o actualizar perfiles de usuario",
+          "Gestionar roles y permisos de acceso",
+          "Generar informes de actividad de usuario"
+        ]
+      },
+      "analytics": {
+        "title": "Analíticas",
+        "metrics": [
+          {
+            "name": "Rendimiento",
+            "charts": [
+              "Rendimiento por clase",
+              "Rendimiento por materia",
+              "Tendencias en el tiempo"
+            ],
+            "description": "Seguimiento del rendimiento de los estudiantes por clases y materias."
+          },
+          {
+            "name": "Asistencia",
+            "charts": [
+              "Asistencia diaria",
+              "Asistencia por clase",
+              "Tendencias en el tiempo"
+            ],
+            "description": "Monitorear tendencias de asistencia diaria y por clase."
+          },
+          {
+            "name": "Uso de recursos",
+            "charts": [
+              "Uso de biblioteca",
+              "Uso de laboratorio",
+              "Uso de instalaciones deportivas"
+            ],
+            "description": "Analizar cómo se utilizan los recursos escolares."
+          },
+          {
+            "name": "Rendimiento del profesor",
+            "charts": [
+              "Efectividad en la enseñanza",
+              "Compromiso de los estudiantes"
+            ],
+            "description": "Evaluar el rendimiento del profesor según varios indicadores."
+          },
+          {
+            "name": "Tendencias en la recaudación de cuotas",
+            "charts": ["Tendencias en el pago de cuotas", "Cuotas pendientes"],
+            "description": "Seguimiento del progreso en la recaudación de cuotas e identificación de tendencias."
+          },
+          {
+            "name": "Tendencias de comportamiento",
+            "charts": [
+              "Incidentes de comportamiento",
+              "Tendencias de buen comportamiento"
+            ],
+            "description": "Monitorear patrones de comportamiento de los estudiantes."
+          }
+        ],
+        "automatedReports": {
+          "dailyReport": "Generar informe diario",
+          "weeklyReport": "Generar informe semanal",
+          "monthlyReport": "Generar informe mensual",
+          "customReport": "Generar informe personalizado"
+        }
+      },
+      "eventManagement": {
+        "title": "Gestión de eventos",
+        "upcomingEvents": [
+          {
+            "name": "Día anual de deportes",
+            "date": "2023-11-20",
+            "attendees": ["Estudiantes", "Padres", "Profesores"],
+            "status": "Planeado"
+          },
+          {
+            "name": "Reunión de padres y maestros",
+            "date": "2023-12-05",
+            "attendees": ["Padres", "Profesores"],
+            "status": "Programado"
+          }
+        ],
+        "eventActions": [
+          "Crear nuevo evento",
+          "Editar evento",
+          "Enviar invitaciones",
+          "Seguimiento de confirmaciones"
+        ],
+        "calendarSync": {
+          "googleCalendar": "Sincronizar con Google Calendar",
+          "outlookCalendar": "Sincronizar con Outlook Calendar"
+        },
+        "features": [
+          "Planificar y gestionar eventos escolares",
+          "Funcionalidad de confirmación para estudiantes, profesores y padres",
+          "Sincronización con calendarios de profesores y padres",
+          "Enviar recordatorios y notificaciones de eventos"
+        ]
+      },
+      "staffManagement": {
+        "title": "Gestión del personal",
+        "teacherProfiles": {
+          "viewAll": "Ver todos los profesores",
+          "addNew": "Agregar nuevo profesor",
+          "assignSubjects": "Asignar materias a profesores",
+          "performanceReviews": "Realizar revisiones de rendimiento"
+        },
+        "nonTeachingStaff": {
+          "viewAll": "Ver todo el personal no docente",
+          "addNew": "Agregar nuevo miembro del personal",
+          "assignRoles": "Asignar roles al personal"
+        },
+        "schedules": {
+          "viewTeacherSchedules": "Ver horarios de profesores",
+          "generateTimetable": "Generar horario escolar"
+        },
+        "features": [
+          "Gestionar perfiles y horarios de profesores",
+          "Monitorear rendimiento y asistencia de profesores",
+          "Asignar y gestionar responsabilidades docentes",
+          "Proporcionar retroalimentación y revisiones de rendimiento"
+        ]
+      },
+      "feeCollection": {
+        "title": "Recaudación de cuotas",
+        "feeDetails": [
+          {
+            "term": "Semestre de otoño",
+            "totalAmount": "$500,000",
+            "collectedAmount": "$450,000",
+            "pendingAmount": "$50,000"
+          },
+          {
+            "term": "Semestre de primavera",
+            "totalAmount": "$600,000",
+            "collectedAmount": "$550,000",
+            "pendingAmount": "$50,000"
+          }
+        ],
+        "actions": [
+          "Ver detalles de cuotas",
+          "Generar informes de cuotas",
+          "Enviar recordatorios de pago",
+          "Procesar pagos en línea"
+        ],
+        "financialReports": {
+          "dailyCollection": "Informe diario de recaudación",
+          "monthlyCollection": "Informe mensual de recaudación",
+          "outstandingFees": "Informe de cuotas pendientes"
+        },
+        "features": [
+          "Facilitar pagos de cuotas",
+          "Generar informes financieros",
+          "Enviar recordatorios para pagos pendientes",
+          "Proporcionar opciones de pago en línea"
+        ]
+      },
+      "resourceManagement": {
+        "title": "Gestión de recursos",
+        "library": {
+          "manageBooks": "Gestionar libros de la biblioteca",
+          "trackBorrowing": "Seguimiento de préstamos de libros",
+          "generateReports": "Generar informes de uso de la biblioteca"
+        },
+        "labs": {
+          "manageEquipment": "Gestionar equipo de laboratorio",
+          "trackUsage": "Seguimiento de uso del laboratorio",
+          "generateReports": "Generar informes de uso del laboratorio"
+        },
+        "sports": {
+          "manageEquipment": "Gestionar equipo deportivo",
+          "trackUsage": "Seguimiento de uso de instalaciones deportivas",
+          "generateReports": "Generar informes de uso deportivo"
+        },
+        "features": [
+          "Gestionar inventario de libros",
+          "Seguimiento de libros prestados y devueltos",
+          "Reservaciones de libros para estudiantes y profesores",
+          "Notificaciones de libros vencidos",
+          "Gestionar equipo de laboratorio y uso",
+          "Gestionar instalaciones y equipo deportivo"
+        ]
+      },
+      "communication": {
+        "title": "Centro de comunicación",
+        "announcements": {
+          "sendAnnouncement": "Enviar anuncio escolar",
+          "viewPastAnnouncements": "Ver anuncios anteriores"
+        },
+        "messaging": {
+          "sendMessages": "Enviar mensajes a profesores, estudiantes o padres",
+          "broadcastMessages": "Transmitir mensajes a grupos específicos"
+        },
+        "feedback": {
+          "collectFeedback": "Recopilar retroalimentación de padres y estudiantes",
+          "viewFeedback": "Ver retroalimentación recolectada"
+        },
+        "features": [
+          "Enviar anuncios a estudiantes, profesores y padres",
+          "Sistema de mensajería dentro de la aplicación",
+          "Programador de reuniones de padres y maestros",
+          "Alertas y notificaciones de emergencia"
+        ]
+      },
+      "academicPlanning": {
+        "title": "Planificación académica",
+        "curriculumManagement": {
+          "viewCurriculum": "Ver currículo escolar",
+          "updateCurriculum": "Actualizar currículo",
+          "assignSubjects": "Asignar materias a clases"
+        },
+        "examScheduling": {
+          "createExams": "Crear horarios de exámenes",
+          "viewExams": "Ver exámenes próximos",
+          "generateHallTickets": "Generar boletos de examen"
+        },
+        "academicCalendar": {
+          "viewCalendar": "Ver calendario académico",
+          "updateCalendar": "Actualizar calendario académico"
+        },
+        "features": [
+          "Gestionar currículo y asignación de materias",
+          "Programar exámenes y generar boletos de examen",
+          "Mantener y actualizar el calendario académico"
+        ]
+      },
+      "securityAndSafety": {
+        "title": "Seguridad y seguridad",
+        "visitorManagement": {
+          "trackVisitors": "Seguimiento de entradas y salidas de visitantes",
+          "issueVisitorPasses": "Emitir pases de visitante"
+        },
+        "emergencyAlerts": {
+          "sendAlerts": "Enviar alertas de emergencia a personal y padres",
+          "drillManagement": "Gestionar simulacros de seguridad"
+        },
+        "cctvMonitoring": {
+          "viewLiveFeed": "Ver transmisión en vivo de CCTV",
+          "generateReports": "Generar informes de seguridad"
+        },
+        "features": [
+          "Seguimiento de entradas y salidas de visitantes",
+          "Emitir pases de visitante",
+          "Enviar alertas de emergencia a personal y padres",
+          "Gestionar simulacros de seguridad",
+          "Monitorear transmisiones en vivo de CCTV"
+        ]
+      },
+      "transportation": {
+        "title": "Transporte escolar",
+        "features": [
+          "Gestionar rutas y horarios de autobús",
+          "Seguimiento de asistencia de estudiantes en autobús",
+          "Enviar actualizaciones en vivo sobre retrasos y cambios",
+          "Notificaciones para padres sobre recogida/entrega"
+        ],
+        "busRoutes": [
+          {
+            "routeName": "Ruta A",
+            "studentsAssigned": "120",
+            "status": "Activa"
+          },
+          {
+            "routeName": "Ruta B",
+            "studentsAssigned": "80",
+            "status": "Inactiva"
+          }
+        ]
+      }
     }
   },
   "notFound": {

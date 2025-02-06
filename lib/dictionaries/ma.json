@@ -4,111 +4,865 @@
     "languageSelection": "اختيار اللغة",
     "login": "دخول لحسابي",
     "theme": {
-      "lightMode": "تشغيل الوضع النهاري",
-      "darkMode": "تشغيل الوضع الليلي"
+      "lightMode": "تحويل لوضع النهار",
+      "darkMode": "تحويل لوضع الليل"
     }
   },
   "footer": {
     "copyrightNotice": "جميع الحقوق محفوظة",
-    "credits": "تم الإنشاء بواسطة"
+    "credits": "صمم بحب من طرف"
   },
   "homePage": {
     "features": {
-      "title": "المميزات",
+      "title": "الميزات",
       "items": [
         {
-          "title": "تعلم مخصص",
-          "description": "دروس متناسبة مع احتياجاتك"
+          "title": "التعلم الشخصي",
+          "description": "مسارات مخصصة حسب احتياجاتك"
         },
         {
-          "title": "تعلم ذكي",
-          "description": "توصيات تعليمية بالذكاء الاصطناعي"
+          "title": "التعلم الذكي",
+          "description": "توصيات تعلم مدعومة بالذكاء الاصطناعي"
         },
         {
-          "title": "تعاون عالمي",
+          "title": "التعاون العالمي",
           "description": "تواصل مع متعلمين من جميع أنحاء العالم"
         },
         {
           "title": "موارد غنية",
-          "description": "ولوج لمكتبة متنوعة من المحتوى"
+          "description": "الوصول إلى مكتبة متنوعة من المحتوى"
         }
       ]
     }
   },
   "auth": {
     "common": {
-      "emailLabel": "البريد الإلكتروني",
-      "backToLogin": "رجوع للدخول",
-      "backToHome": "رجوع للصفحة الرئيسية",
-      "resetButton": "Recevoir un lien"
+      "emailLabel": "الإيميل",
+      "backToLogin": "العودة لتسجيل الدخول",
+      "backToHome": "العودة للصفحة الرئيسية",
+      "resetButton": "استلام الرابط"
     },
     "login": {
-      "welcomeMessage": "مرحبا بك في فضائك الخاص",
-      "welcomeDescription": "نظام معلومات متكامل كيسمح بتطبيق طرق جديدة ديال تدبير المدرسة",
-      "title": "تسجيل الدخول",
-      "description": "دخل لحسابك",
+      "welcomeMessage": "مرحبا بيك في مساحتك الخاصة",
+      "welcomeDescription": "نظام معلومات متكامل يسمح بطرق جديدة لإدارة المدرسة.",
+      "title": "مرحبا بيك في مساحتك الخاصة",
+      "description": "سجل الدخول لحسابك",
       "identifierLabel": "المعرف",
       "passwordLabel": "كلمة السر",
-      "rememberMe": "بقيني متصل",
-      "submitButton": "دخول",
-      "forgotPassword": "نسيتي كلمة السر؟",
-      "forgotIdentifier": "نسيتي المعرف؟"
+      "rememberMe": "خليني مسجل الدخول",
+      "submitButton": "سجل الدخول",
+      "forgotPassword": "نسيت كلمة السر؟",
+      "forgotIdentifier": "نسيت المعرف؟"
     },
     "forgotPassword": {
       "title": "نسيت كلمة السر",
-      "description": "دخل البريد الإلكتروني باش تعاود ضبط كلمة السر"
+      "description": "ادخل إيميلك علشان تعيد تعيين كلمة السر"
     },
     "forgotIdentifier": {
       "title": "نسيت المعرف",
-      "description": "دخل البريد الإلكتروني باش ترجع المعرف"
+      "description": "ادخل إيميلك علشان تسترجع المعرف"
     },
     "newPassword": {
-      "title": "كلمة السر الجديدة",
-      "description": "دير كلمة سر جديدة",
+      "title": "كلمة سر جديدة",
+      "description": "خلق كلمة سر جديدة",
       "newPasswordLabel": "كلمة السر الجديدة",
-      "confirmPasswordLabel": "أكد كلمة السر",
-      "submitButton": "RESET PASSWORD"
-    }
-  },
-  "parentPage": {
-    "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist.",
-    "sections": {
-      "progress": "Sorry, the page you are looking for does not exist.",
-      "communications": "Sorry, the page you are looking for does not exist.",
-      "events": "Sorry, the page you are looking for does not exist."
-    }
-  },
-  "schoolPage": {
-    "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist.",
-    "sections": {
-      "userManagement": "Sorry, the page you are looking for does not exist.",
-      "analytics": "Sorry, the page you are looking for does not exist.",
-      "settings": "Sorry, the page you are looking for does not exist."
+      "confirmPasswordLabel": "تأكيد كلمة السر",
+      "submitButton": "إعادة تعيين كلمة السر"
     }
   },
   "studentPage": {
-    "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist.",
+    "title": "لوحة الطالب",
+    "welcome": "مرحبا بيك مرة أخرى!",
     "sections": {
-      "courses": "Sorry, the page you are looking for does not exist.",
-      "assignments": "Sorry, the page you are looking for does not exist.",
-      "progress": "Sorry, the page you are looking for does not exist."
+      "dashboardOverview": {
+        "title": "نظرة عامة على اللوحة",
+        "upcomingActivities": {
+          "homework": {
+            "title": "الواجبات القادمة",
+            "description": "الواجبات القادمة"
+          },
+          "exams": {
+            "title": "الامتحانات القادمة",
+            "description": "الامتحانات القادمة"
+          },
+          "events": {
+            "title": "الأحداث القادمة",
+            "description": "الأحداث القادمة"
+          }
+        },
+        "quickAccess": {
+          "messages": {
+            "title": "رسائل جديدة من الأساتذة",
+            "description": "رسائل جديدة من الأساتذة"
+          },
+          "notifications": {
+            "title": "3 إشعارات غير مقروءة",
+            "description": "3 إشعارات غير مقروءة"
+          },
+          "learningResources": {
+            "title": "الوصول إلى المواد التعليمية",
+            "description": "الوصول إلى المواد التعليمية"
+          }
+        },
+        "gamification": {
+          "points": {
+            "title": "النقاط الإجمالية",
+            "description": "النقاط الإجمالية"
+          },
+          "badges": {
+            "title": "الشهادات المحصل عليها",
+            "description": "الشهادات المحصل عليها"
+          },
+          "attendanceReward": {
+            "title": "مكافأة الحضور",
+            "description": "مكافأة الحضور"
+          }
+        }
+      },
+      "homeworkTracker": {
+        "title": "تتبع الواجبات",
+        "viewAll": "شوف جميع الواجبات",
+        "submitAssignment": "سلم الواجب",
+        "trackProgress": "تتبع التقدم",
+        "attachments": {
+          "uploadFile": "رفع ملف",
+          "supportedFormats": "الصيغ المدعومة: PDF, DOCX, JPG, PNG, MP4"
+        },
+        "reminders": {
+          "aiReminders": "تذكيرات بالذكاء الاصطناعي",
+          "approachingDeadlines": "المواعيد النهائية القريبة"
+        },
+        "assignments": [
+          {
+            "title": "واجب الرياضيات",
+            "deadline": "مستحق بكرا",
+            "subject": "الرياضيات",
+            "status": "قيد الانتظار"
+          },
+          {
+            "title": "مشروع العلوم",
+            "deadline": "مستحق الأسبوع الجاي",
+            "subject": "العلوم",
+            "status": "قيد التقدم"
+          }
+        ]
+      },
+      "learningResources": {
+        "title": "الموارد التعليمية",
+        "accessMaterials": "الوصول إلى مواد الدروس",
+        "organizeBy": {
+          "subject": "نظم حسب المادة",
+          "date": "نظم حسب التاريخ",
+          "priority": "نظم حسب الأولوية"
+        },
+        "offlineAccess": "تحميل للاستخدام بدون إنترنت",
+        "categories": [
+          "ملاحظات الدروس",
+          "كتب إلكترونية",
+          "دروس فيديو",
+          "اختبارات تدريبية",
+          "مواد إضافية"
+        ]
+      },
+      "classSchedule": {
+        "title": "جدول الحصص",
+        "dailyTimetable": "جدول اليومي",
+        "upcomingLessons": "الدروس القادمة",
+        "syncCalendars": "تزامن مع التقويم الشخصي",
+        "calendarOptions": ["تقويم جوجل", "تقويم أبل", "تقويم Outlook"]
+      },
+      "progressReports": {
+        "title": "تقارير التقدم",
+        "viewGrades": "شوف النقاط",
+        "attendance": "سجل الحضور",
+        "teacherFeedback": "تعليقات الأستاذ",
+        "charts": {
+          "academicPerformance": "رسم الأداء الأكاديمي",
+          "attendanceTrends": "رسم اتجاهات الحضور"
+        },
+        "aiInsights": {
+          "areasForImprovement": "مجالات التحسين",
+          "suggestions": "اقتراحات شخصية"
+        },
+        "stats": {
+          "attendancePercentage": "95%",
+          "completedAssignments": "23/25",
+          "averageGrade": "A"
+        }
+      },
+      "peerCollaboration": {
+        "title": "التعاون بين الزملاء",
+        "groupChats": "انضم للمجموعات",
+        "forums": "شارك في المنتديات",
+        "fileSharing": "شارك الملفات",
+        "realTimeTools": "أدوات التعاون في الوقت الحقيقي",
+        "features": [
+          "الدردشة النصية",
+          "المكالمات الصوتية",
+          "مشاركة الشاشة",
+          "التعديل المشترك على المستندات"
+        ]
+      }
+    }
+  },
+  "parentPage": {
+    "title": "لوحة ولي الأمر",
+    "welcome": "مرحبا بيك مرة أخرى، ولي الأمر!",
+    "sections": {
+      "dashboardOverview": {
+        "title": "نظرة عامة على اللوحة",
+        "childOverview": {
+          "homework": {
+            "title": "واجبات الولد",
+            "description": "تابع الواجبات والمواعيد النهائية."
+          },
+          "grades": {
+            "title": "نقاط الولد",
+            "description": "شوف النقاط الأخيرة واتجاهات الأداء."
+          },
+          "attendance": {
+            "title": "حضور الولد",
+            "description": "تابع سجل الحضور والتحديثات."
+          }
+        },
+        "notifications": {
+          "upcomingEvents": {
+            "title": "الأحداث القادمة",
+            "description": "إشعارات لأحداث المدرسة."
+          },
+          "teacherMessages": {
+            "title": "رسائل الأساتذة",
+            "description": "استقبل رسائل من الأساتذة."
+          },
+          "behavioralUpdates": {
+            "title": "تحديثات السلوك",
+            "description": "كن على علم بتحديثات سلوك الولد."
+          }
+        }
+      },
+      "performanceTracking": {
+        "title": "تتبع الأداء",
+        "viewGrades": "شوف النقاط",
+        "attendanceRecord": "سجل الحضور",
+        "teacherComments": "تعليقات الأستاذ",
+        "charts": {
+          "academicPerformance": "رسم الأداء الأكاديمي",
+          "attendanceTrends": "رسم اتجاهات الحضور"
+        },
+        "aiInsights": {
+          "areasForImprovement": "مجالات التحسين",
+          "suggestions": "اقتراحات شخصية"
+        },
+        "stats": {
+          "attendancePercentage": "95%",
+          "completedAssignments": "23/25",
+          "averageGrade": "A"
+        }
+      },
+      "homeworkTracking": {
+        "title": "تتبع الواجبات",
+        "monitorAssignments": "تابع الواجبات المسندة",
+        "receiveAlerts": "استقبل تنبيهات للواجبات غير المسلمة",
+        "assignments": [
+          {
+            "title": "واجب الرياضيات",
+            "deadline": "مستحق بكرا",
+            "subject": "الرياضيات",
+            "status": "قيد الانتظار"
+          },
+          {
+            "title": "مشروع العلوم",
+            "deadline": "مستحق الأسبوع الجاي",
+            "subject": "العلوم",
+            "status": "قيد التقدم"
+          }
+        ]
+      },
+      "communication": {
+        "title": "التواصل",
+        "directMessaging": "المراسلة المباشرة مع الأساتذة",
+        "languageTranslation": {
+          "availableLanguages": ["العربية", "الفرنسية", "الإنجليزية"],
+          "description": "ترجمة الرسائل بين العربية، الفرنسية، والإنجليزية."
+        },
+        "announcements": {
+          "title": "إعلانات المدرسة",
+          "description": "شوف الإعلانات المهمة من المدرسة."
+        }
+      },
+      "childSafetyAlerts": {
+        "title": "تنبيهات سلامة الولد",
+        "missedSchool": "تنبيه إذا الولد ما حضرش للمدرسة",
+        "earlyDeparture": "تنبيه إذا الولد غادر بدري",
+        "healthUpdates": "تحديثات الحالة الصحية",
+        "busSchedule": "تنبيهات جدول الحافلة"
+      },
+      "feeManagement": {
+        "title": "إدارة الرسوم",
+        "viewFees": "شوف تفاصيل الرسوم",
+        "makePayments": "ادفع عبر الإنترنت",
+        "reminders": "استقبل تذكيرات بمواعيد الدفع",
+        "feeDetails": [
+          {
+            "term": "الفصل الأول",
+            "amount": "$500",
+            "dueDate": "15 نوفمبر",
+            "status": "قيد الانتظار"
+          },
+          {
+            "term": "الفصل الثاني",
+            "amount": "$600",
+            "dueDate": "15 مارس",
+            "status": "تم الدفع"
+          }
+        ]
+      },
+      "activityLog": {
+        "title": "سجل النشاطات",
+        "description": "تابع نشاطات الولد اليومية في المدرسة.",
+        "features": ["المشاركة في الحصص", "النشاطات الخارجية", "زيارات المكتبة"]
+      },
+      "parentEngagement": {
+        "title": "مشاركة أولياء الأمور",
+        "description": "شارك في نشاطات المدرسة وابقى على اتصال.",
+        "features": [
+          "فرص التطوع",
+          "اجتماعات أولياء الأمور والأساتذة",
+          "استطلاعات الرأي"
+        ]
+      },
+      "resourceCenter": {
+        "title": "مركز الموارد",
+        "description": "الوصول إلى موارد مفيدة لدعم تعليم الولد.",
+        "categories": ["نصائح الدراسة", "إرشادات التربية", "سياسات المدرسة"]
+      },
+      "extracurricularActivities": {
+        "title": "النشاطات الخارجية",
+        "trackActivities": "تابع مشاركة الولد في النشاطات الخارجية.",
+        "upcomingEvents": "شوف الأحداث والمسابقات القادمة.",
+        "performanceUpdates": "استقبل تحديثات عن أداء الولد في النشاطات."
+      },
+      "healthAndWellness": {
+        "title": "الصحة والعافية",
+        "healthUpdates": "استقبل تحديثات عن صحة الولد من ممرضة المدرسة.",
+        "mentalHealthResources": "الوصول إلى موارد لدعم الصحة النفسية للولد.",
+        "nutritionTips": "احصل على نصائح عن الأكل الصحي والتغذية للولد."
+      },
+      "schoolResources": {
+        "title": "موارد المدرسة",
+        "libraryAccess": "الوصول إلى الموارد الرقمية لمكتبة المدرسة.",
+        "tutoringServices": "اعرف معلومات عن خدمات الدعم المتاحة.",
+        "parentWorkshops": "سجل في ورشات العمل لدعم تعليم الولد."
+      }
     }
   },
   "teacherPage": {
-    "title": "Page not found",
-    "description": "Sorry, the page you are looking for does not exist.",
+    "title": "لوحة الأستاذ",
+    "welcome": "مرحبا بيك مرة أخرى، أستاذ!",
     "sections": {
-      "classes": "Sorry, the page you are looking for does not exist.",
-      "progress": "Sorry, the page you are looking for does not exist.",
-      "resources": "Sorry, the page you are looking for does not exist."
+      "dashboardOverview": {
+        "title": "نظرة عامة على اللوحة",
+        "upcomingActivities": {
+          "classes": {
+            "title": "نظرة عامة على الحصص",
+            "description": "نظرة عامة على الحصص"
+          },
+          "upcomingLessons": {
+            "title": "الدروس القادمة",
+            "description": "الدروس القادمة"
+          },
+          "events": {
+            "title": "الأحداث القادمة",
+            "description": "الأحداث القادمة"
+          }
+        },
+        "quickAccess": {
+          "messages": {
+            "title": "إرسال الرسائل",
+            "description": "إرسال الرسائل"
+          },
+          "notifications": {
+            "title": "شوف الإشعارات",
+            "description": "شوف الإشعارات"
+          },
+          "attendanceTracking": {
+            "title": "تتبع الحضور",
+            "description": "تتبع الحضور"
+          }
+        }
+      },
+      "homeworkManagement": {
+        "title": "إدارة الواجبات",
+        "assignHomework": "اسند واجبات",
+        "reviewSubmissions": "راجع التسليمات",
+        "automatedGrading": "تصحيح آلي",
+        "reminders": "تذكيرات بالذكاء الاصطناعي",
+        "assignments": [
+          {
+            "title": "واجب الرياضيات - الفصل 3",
+            "subject": "الرياضيات",
+            "deadline": "مستحق: 15 ديسمبر",
+            "status": "مسند"
+          },
+          {
+            "title": "مشروع العلوم - الأنظمة البيئية",
+            "subject": "العلوم",
+            "deadline": "مستحق: 10 يناير",
+            "status": "قيد التقدم"
+          }
+        ]
+      },
+      "classMaterials": {
+        "title": "مواد الحصص",
+        "uploadResources": "رفع الموارد",
+        "organizeBy": {
+          "class": "نظم حسب الحصة",
+          "subject": "نظم حسب المادة"
+        },
+        "resources": [
+          {
+            "name": "خطة درس الرياضيات - الأسبوع 4",
+            "type": "خطة الدرس",
+            "uploadedBy": "الأستاذ سميث",
+            "dateUploaded": "20 نوفمبر"
+          },
+          {
+            "name": "ورقة عمل العلوم - الفصل 5",
+            "type": "ورقة العمل",
+            "uploadedBy": "الأستاذة جونسون",
+            "dateUploaded": "22 نوفمبر"
+          }
+        ]
+      },
+      "attendanceAndGrades": {
+        "title": "الحضور والنقاط",
+        "markAttendance": "سجل الحضور",
+        "inputGrades": "ادخل النقاط",
+        "shareProgressReports": "شارك تقارير التقدم",
+        "viewAnalytics": "شوف التحليلات",
+        "students": [
+          {
+            "name": "جون دو",
+            "class": "الصف 8",
+            "attendancePercentage": "95%",
+            "averageGrade": "A"
+          },
+          {
+            "name": "جين سميث",
+            "class": "الصف 7",
+            "attendancePercentage": "88%",
+            "averageGrade": "B+"
+          }
+        ]
+      },
+      "communication": {
+        "title": "التواصل",
+        "sendAnnouncements": "إرسال إعلانات",
+        "messageParents": "ارسل رسائل لأولياء الأمور",
+        "messageStudents": "ارسل رسائل للطلاب",
+        "languageTranslation": "ترجمة الرسائل (العربية، الفرنسية، الإنجليزية)",
+        "recentMessages": [
+          {
+            "recipient": "ولي أمر جون دو",
+            "subject": "امتحان العلوم القادم",
+            "timestamp": "1 ديسمبر"
+          },
+          {
+            "recipient": "الصف 8A",
+            "subject": "تذكير بالواجب",
+            "timestamp": "30 نوفمبر"
+          }
+        ]
+      },
+      "lessonPlanning": {
+        "title": "أدوات تخطيط الدروس",
+        "createLessonPlans": "خلق خطط الدروس",
+        "shareWithAdmins": "شارك مع الإدارة",
+        "shareWithStudents": "شارك مع الطلاب",
+        "syncCalendars": "تزامن خطط الدروس مع التقويم",
+        "lessonPlans": [
+          {
+            "title": "درس الرياضيات - أساسيات الجبر",
+            "date": "5 ديسمبر",
+            "class": "الصف 8"
+          },
+          {
+            "title": "درس العلوم - الأنظمة البيئية",
+            "date": "7 ديسمبر",
+            "class": "الصف 7"
+          }
+        ]
+      },
+      "professionalDevelopment": {
+        "title": "التطوير المهني",
+        "courses": "شوف الدورات المتاحة",
+        "certifications": "تابع الشهادات",
+        "feedback": "قدم ملاحظات على برامج التدريب",
+        "coursesList": [
+          {
+            "title": "تقنيات التدريس المتقدمة",
+            "startDate": "15 يناير",
+            "endDate": "15 فبراير",
+            "status": "مسجل"
+          },
+          {
+            "title": "استخدام الذكاء الاصطناعي في التعليم",
+            "startDate": "1 مارس",
+            "endDate": "30 مارس",
+            "status": "مكتمل"
+          }
+        ]
+      },
+      "schoolAnnouncements": {
+        "title": "إعلانات المدرسة",
+        "viewAllAnnouncements": "شوف جميع الإعلانات",
+        "postNewAnnouncement": "نشر إعلان جديد",
+        "announcements": [
+          {
+            "title": "جدول العطلة الشتوية",
+            "date": "1 ديسمبر",
+            "content": "المدرسة بتكون مقفولة من 20 ديسمبر إلى 5 يناير."
+          },
+          {
+            "title": "اجتماع أولياء الأمور والأساتذة",
+            "date": "25 نوفمبر",
+            "content": "انضموا لينا في الاجتماع يوم 28 نوفمبر على الساعة 3 بعد الزوال."
+          }
+        ]
+      }
+    }
+  },
+  "schoolPage": {
+    "title": "إدارة المدرسة",
+    "welcome": "مرحبا بيك، مدير!",
+    "sections": {
+      "overview": {
+        "title": "نظرة عامة على المدرسة",
+        "stats": {
+          "totalStudents": "1200",
+          "totalTeachers": "45",
+          "totalParents": "1100",
+          "totalAdmins": "10",
+          "averageAttendance": "94%",
+          "activeClasses": "30",
+          "monthlyEnrollments": "30",
+          "pendingFeePayments": "$15,000",
+          "upcomingEvents": "5"
+        },
+        "quickActions": {
+          "addNewStudent": "ضيف طالب جديد",
+          "addNewTeacher": "ضيف أستاذ جديد",
+          "sendAnnouncement": "ارسل إعلان للمدرسة",
+          "generateReport": "خلق تقرير المدرسة"
+        }
+      },
+      "management": {
+        "title": "إدارة المستخدمين",
+        "categories": [
+          {
+            "name": "الطلاب",
+            "actions": [
+              "ضيف طالب",
+              "عدل بروفايل الطالب",
+              "شوف أداء الطالب",
+              "اسند للصف"
+            ]
+          },
+          {
+            "name": "الأساتذة",
+            "actions": [
+              "ضيف أستاذ",
+              "عدل بروفايل الأستاذ",
+              "اسند المواد",
+              "شوف جدول الأستاذ"
+            ]
+          },
+          {
+            "name": "أولياء الأمور",
+            "actions": [
+              "ضيف ولي أمر",
+              "ربط بالطالب",
+              "شوف ملاحظات ولي الأمر",
+              "ارسل إشعارات"
+            ]
+          },
+          {
+            "name": "المدراء",
+            "actions": [
+              "ضيف مدير",
+              "عدل بروفايل المدير",
+              "اسند الأدوار",
+              "إدارة الصلاحيات"
+            ]
+          }
+        ],
+        "features": [
+          "ضيف، شيل، أو عدل بروفايلات المستخدمين",
+          "إدارة الأدوار والصلاحيات",
+          "خلق تقارير نشاط المستخدمين"
+        ]
+      },
+      "analytics": {
+        "title": "التحليلات",
+        "metrics": [
+          {
+            "name": "الأداء",
+            "charts": [
+              "الأداء حسب الصف",
+              "الأداء حسب المادة",
+              "الاتجاهات مع الوقت"
+            ],
+            "description": "تابع أداء الطلاب عبر الصفوف والمواد."
+          },
+          {
+            "name": "الحضور",
+            "charts": [
+              "الحضور اليومي",
+              "الحضور حسب الصف",
+              "الاتجاهات مع الوقت"
+            ],
+            "description": "تابع اتجاهات الحضور اليومية وحسب الصف."
+          },
+          {
+            "name": "استخدام الموارد",
+            "charts": [
+              "استخدام المكتبة",
+              "استخدام المختبر",
+              "استخدام المرافق الرياضية"
+            ],
+            "description": "حلل كيفية استخدام موارد المدرسة."
+          },
+          {
+            "name": "أداء الأساتذة",
+            "charts": ["فعالية التدريس", "تفاعل الطلاب"],
+            "description": "قيم أداء الأساتذة بناءً على مقاييس مختلفة."
+          },
+          {
+            "name": "اتجاهات تحصيل الرسوم",
+            "charts": ["اتجاهات دفع الرسوم", "الرسوم المتبقية"],
+            "description": "تابع تحصيل الرسوم وتعرف على الاتجاهات."
+          },
+          {
+            "name": "اتجاهات السلوك",
+            "charts": ["حوادث السلوك", "اتجاهات السلوك الإيجابي"],
+            "description": "تابع أنماط سلوك الطلاب."
+          }
+        ],
+        "automatedReports": {
+          "dailyReport": "خلق تقرير يومي",
+          "weeklyReport": "خلق تقرير أسبوعي",
+          "monthlyReport": "خلق تقرير شهري",
+          "customReport": "خلق تقرير مخصص"
+        }
+      },
+      "eventManagement": {
+        "title": "إدارة الأحداث",
+        "upcomingEvents": [
+          {
+            "name": "اليوم الرياضي السنوي",
+            "date": "2023-11-20",
+            "attendees": ["الطلاب", "أولياء الأمور", "الأساتذة"],
+            "status": "مخطط"
+          },
+          {
+            "name": "اجتماع أولياء الأمور والأساتذة",
+            "date": "2023-12-05",
+            "attendees": ["أولياء الأمور", "الأساتذة"],
+            "status": "مجدول"
+          }
+        ],
+        "eventActions": [
+          "خلق حدث جديد",
+          "عدل الحدث",
+          "ارسل الدعوات",
+          "تابع الردود"
+        ],
+        "calendarSync": {
+          "googleCalendar": "تزامن مع تقويم جوجل",
+          "outlookCalendar": "تزامن مع تقويم Outlook"
+        },
+        "features": [
+          "خطط وادير أحداث المدرسة",
+          "وظيفة الردود للطلاب، الأساتذة، وأولياء الأمور",
+          "تزامن مع تقويمات الأساتذة وأولياء الأمور",
+          "ارسل تذكيرات وإشعارات بالأحداث"
+        ]
+      },
+      "staffManagement": {
+        "title": "إدارة الطاقم",
+        "teacherProfiles": {
+          "viewAll": "شوف جميع الأساتذة",
+          "addNew": "ضيف أستاذ جديد",
+          "assignSubjects": "اسند المواد للأساتذة",
+          "performanceReviews": "نفذ تقييمات الأداء"
+        },
+        "nonTeachingStaff": {
+          "viewAll": "شوف جميع الطاقم غير التدريسي",
+          "addNew": "ضيف عضو جديد",
+          "assignRoles": "اسند الأدوار للطاقم"
+        },
+        "schedules": {
+          "viewTeacherSchedules": "شوف جداول الأساتذة",
+          "generateTimetable": "خلق جدول المدرسة"
+        },
+        "features": [
+          "إدارة بروفايلات وجداول الأساتذة",
+          "تابع أداء وحضور الأساتذة",
+          "اسند وادير مسؤوليات التدريس",
+          "قدم ملاحظات وتقييمات الأداء"
+        ]
+      },
+      "feeCollection": {
+        "title": "تحصيل الرسوم",
+        "feeDetails": [
+          {
+            "term": "الفصل الأول",
+            "totalAmount": "$500,000",
+            "collectedAmount": "$450,000",
+            "pendingAmount": "$50,000"
+          },
+          {
+            "term": "الفصل الثاني",
+            "totalAmount": "$600,000",
+            "collectedAmount": "$550,000",
+            "pendingAmount": "$50,000"
+          }
+        ],
+        "actions": [
+          "شوف تفاصيل الرسوم",
+          "خلق تقارير الرسوم",
+          "ارسل تذكيرات بالدفع",
+          "نفذ الدفعات عبر الإنترنت"
+        ],
+        "financialReports": {
+          "dailyCollection": "تقرير التحصيل اليومي",
+          "monthlyCollection": "تقرير التحصيل الشهري",
+          "outstandingFees": "تقرير الرسوم المتبقية"
+        },
+        "features": [
+          "سهل دفع الرسوم",
+          "خلق تقارير مالية",
+          "ارسل تذكيرات بمواعيد الدفع",
+          "وفر خيارات دفع عبر الإنترنت"
+        ]
+      },
+      "resourceManagement": {
+        "title": "إدارة الموارد",
+        "library": {
+          "manageBooks": "إدارة كتب المكتبة",
+          "trackBorrowing": "تابع استعارة الكتب",
+          "generateReports": "خلق تقارير استخدام المكتبة"
+        },
+        "labs": {
+          "manageEquipment": "إدارة معدات المختبر",
+          "trackUsage": "تابع استخدام المختبر",
+          "generateReports": "خلق تقارير استخدام المختبر"
+        },
+        "sports": {
+          "manageEquipment": "إدارة معدات الرياضة",
+          "trackUsage": "تابع استخدام المرافق الرياضية",
+          "generateReports": "خلق تقارير استخدام الرياضة"
+        },
+        "features": [
+          "إدارة مخزون الكتب",
+          "تابع الكتب المستعارة والمعادة",
+          "حجوزات الطلاب والأساتذة",
+          "إشعارات الكتب المتأخرة",
+          "إدارة معدات المختبر واستخدامها",
+          "إدارة المرافق الرياضية ومعداتها"
+        ]
+      },
+      "communication": {
+        "title": "مركز التواصل",
+        "announcements": {
+          "sendAnnouncement": "ارسل إعلان للمدرسة",
+          "viewPastAnnouncements": "شوف الإعلانات السابقة"
+        },
+        "messaging": {
+          "sendMessages": "ارسل رسائل للأساتذة، الطلاب، أو أولياء الأمور",
+          "broadcastMessages": "بث رسائل لمجموعات محددة"
+        },
+        "feedback": {
+          "collectFeedback": "جمع ملاحظات من أولياء الأمور والطلاب",
+          "viewFeedback": "شوف الملاحظات المجمعة"
+        },
+        "features": [
+          "ارسل إعلانات للطلاب، الأساتذة، وأولياء الأمور",
+          "نظام المراسلة داخل التطبيق",
+          "جدولة اجتماعات أولياء الأمور والأساتذة",
+          "تنبيهات الطوارئ والإشعارات"
+        ]
+      },
+      "academicPlanning": {
+        "title": "التخطيط الأكاديمي",
+        "curriculumManagement": {
+          "viewCurriculum": "شوف منهاج المدرسة",
+          "updateCurriculum": "عدل المنهاج",
+          "assignSubjects": "اسند المواد للصفوف"
+        },
+        "examScheduling": {
+          "createExams": "خلق جداول الامتحانات",
+          "viewExams": "شوف الامتحانات القادمة",
+          "generateHallTickets": "خلق تذاكر القاعة"
+        },
+        "academicCalendar": {
+          "viewCalendar": "شوف التقويم الأكاديمي",
+          "updateCalendar": "عدل التقويم الأكاديمي"
+        },
+        "features": [
+          "إدارة المنهاج وتخصيص المواد",
+          "جدولة الامتحانات وخلق تذاكر القاعة",
+          "حافظ وعدل على التقويم الأكاديمي"
+        ]
+      },
+      "securityAndSafety": {
+        "title": "الأمن والسلامة",
+        "visitorManagement": {
+          "trackVisitors": "تابع دخول وخروج الزوار",
+          "issueVisitorPasses": "اصدر تصاريح الزوار"
+        },
+        "emergencyAlerts": {
+          "sendAlerts": "ارسل تنبيهات الطوارئ للطاقم وأولياء الأمور",
+          "drillManagement": "إدارة تدريبات السلامة"
+        },
+        "cctvMonitoring": {
+          "viewLiveFeed": "شوف البث المباشر للكاميرات",
+          "generateReports": "خلق تقارير الأمن"
+        },
+        "features": [
+          "تابع دخول وخروج الزوار",
+          "اصدر تصاريح الزوار",
+          "ارسل تنبيهات الطوارئ للطاقم وأولياء الأمور",
+          "إدارة تدريبات السلامة",
+          "تابع البث المباشر للكاميرات"
+        ]
+      },
+      "transportation": {
+        "title": "نقل المدرسة",
+        "features": [
+          "إدارة مسارات وجداول الحافلات",
+          "تابع حضور الطلاب في الحافلات",
+          "ارسل تحديثات مباشرة عن التأخيرات والتغييرات",
+          "إشعارات أولياء الأمور للوصول والمغادرة"
+        ],
+        "busRoutes": [
+          {
+            "routeName": "المسار أ",
+            "studentsAssigned": "120",
+            "status": "نشط"
+          },
+          {
+            "routeName": "المسار ب",
+            "studentsAssigned": "80",
+            "status": "غير نشط"
+          }
+        ]
+      }
     }
   },
   "notFound": {
-    "title": "الصفحة ما كايناش",
-    "description": "سمح لينا، الصفحة لي كتقلب عليها ما كايناش.",
-    "backHome": "رجوع للصفحة الرئيسية"
+    "title": "الصفحة ماشي موجودة",
+    "description": "عذرا، الصفحة اللي كاتبها ماشي موجودة.",
+    "backHome": "العودة للصفحة الرئيسية"
   }
 }
