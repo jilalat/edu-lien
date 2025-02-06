@@ -3,7 +3,7 @@ interface AuthHeadingProps {
   description: string;
 }
 
-export default function Heading({ title, description }: AuthHeadingProps) {
+export default function AuthHeading({ title, description }: AuthHeadingProps) {
   return (
     <>
       <h1 className="text-3xl font-bold text-gray-900 dark:text-white">

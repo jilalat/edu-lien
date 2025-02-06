@@ -1,7 +1,7 @@
+import AuthHeading from '@/components/auth/heading';
+import PageWrapper from '@/components/auth/page-wrapper';
 import { getDictionary } from '@/lib/dictionary';
-import PageWrapper from '../components/page-wrapper';
 import { ForgotForm } from '../components/forgot-form';
-import Heading from '../components/heading';
 
 export default async function ForgotPasswordPage({
   params: { lang },
@@ -12,7 +12,7 @@ export default async function ForgotPasswordPage({
 
   return (
     <PageWrapper>
-      <Heading
+      <AuthHeading
         title={dict.auth.forgotPassword.title}
         description={dict.auth.forgotPassword.description}
       />

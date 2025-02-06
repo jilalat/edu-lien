@@ -1,7 +1,7 @@
+import AuthHeading from '@/components/auth/heading';
+import PageWrapper from '@/components/auth/page-wrapper';
 import { getDictionary } from '@/lib/dictionary';
 import { NewPasswordForm } from './new-password-form';
-import PageWrapper from '../components/page-wrapper';
-import Heading from '../components/heading';
 
 export default async function NewPasswordPage({
   params: { lang },
@@ -12,7 +12,7 @@ export default async function NewPasswordPage({
 
   return (
     <PageWrapper>
-      <Heading
+      <AuthHeading
         title={dict.auth.newPassword.title}
         description={dict.auth.newPassword.description}
       />

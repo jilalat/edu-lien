@@ -1,7 +1,19 @@
+import DashboardWrapper from '@/components/dashboard/dashboard-warapper';
 import { routes } from '@/config/routes';
+import { generateStaticParams } from '@/lib/dictionaries/static-params';
 import { getDictionary } from '@/lib/dictionary';
 import { redirect } from 'next/navigation';
-import { generateStaticParams } from '@/lib/dictionaries/static-params';
+import AcademicPlanning from './components/academic-planning';
+import Analytics from './components/analytics';
+import Communication from './components/communication';
+import EventManagement from './components/event-management';
+import FeeCollection from './components/fee-collection';
+import Management from './components/management';
+import Overview from './components/overview';
+import ResourceManagement from './components/resource-management';
+import SecurityAndSafety from './components/security-and-safety';
+import StaffManagement from './components/staff-management';
+import Transportation from './components/transportation';
 
 export { generateStaticParams };
 
@@ -10,38 +22,29 @@ export default async function SchoolDashboard({
 }: {
   params: { lang: string };
 }) {
-  // TODO: Replace with actual auth check
-  const isSchool = true;
-
-  if (!isSchool) {
+  const isAdmin = true; // Replace with actual auth check
+  if (!isAdmin) {
     redirect(routes.home(lang));
   }
 
   const dict = await getDictionary(lang);
 
   return (
-    <div className="container py-8">
-      <h1 className="text-3xl font-bold mb-6">{dict.schoolPage.title}</h1>
-      <p className="text-muted-foreground mb-8">
-        {dict.schoolPage.description}
-      </p>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">
-            {dict.schoolPage.sections.userManagement}
-          </h2>
-        </div>
-        <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">
-            {dict.schoolPage.sections.analytics}
-          </h2>
-        </div>
-        <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">
-            {dict.schoolPage.sections.settings}
-          </h2>
-        </div>
-      </div>
-    </div>
+    <DashboardWrapper
+      title={dict.schoolPage.title}
+      description={dict.schoolPage.welcome}
+    >
+      <Overview dict={dict.schoolPage.sections.overview} />
+      <Management dict={dict.schoolPage.sections.management} />
+      <Analytics dict={dict.schoolPage.sections.analytics} />
+      <EventManagement dict={dict.schoolPage.sections.eventManagement} />
+      <StaffManagement dict={dict.schoolPage.sections.staffManagement} />
+      <FeeCollection dict={dict.schoolPage.sections.feeCollection} />
+      <ResourceManagement dict={dict.schoolPage.sections.resourceManagement} />
+      <Communication dict={dict.schoolPage.sections.communication} />
+      <AcademicPlanning dict={dict.schoolPage.sections.academicPlanning} />
+      <SecurityAndSafety dict={dict.schoolPage.sections.securityAndSafety} />
+      <Transportation dict={dict.schoolPage.sections.transportation} />
+    </DashboardWrapper>
   );
 }

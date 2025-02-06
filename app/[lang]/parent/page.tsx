@@ -1,7 +1,20 @@
+import DashboardWrapper from '@/components/dashboard/dashboard-warapper';
 import { routes } from '@/config/routes';
+import { generateStaticParams } from '@/lib/dictionaries/static-params';
 import { getDictionary } from '@/lib/dictionary';
 import { redirect } from 'next/navigation';
-import { generateStaticParams } from '@/lib/dictionaries/static-params';
+import ActivityLog from './components/activity-log';
+import ChildSafetyAlerts from './components/child-safety-alerts';
+import Communication from './components/communication';
+import DashboardOverview from './components/dashboard-overview';
+import ExtracurricularActivities from './components/extracurricular-activities';
+import FeeManagement from './components/fee-management';
+import HealthAndWellness from './components/health-and-wellness';
+import HomeworkTracking from './components/homework-tracking';
+import ParentEngagement from './components/parent-engagement';
+import PerformanceTracking from './components/performance-tracking';
+import ResourceCenter from './components/resource-center';
+import SchoolResources from './components/school-resources';
 
 export { generateStaticParams };
 
@@ -10,9 +23,7 @@ export default async function ParentDashboard({
 }: {
   params: { lang: string };
 }) {
-  // TODO: Replace with actual auth check
-  const isParent = false;
-
+  const isParent = true; // Replace with actual auth check
   if (!isParent) {
     redirect(routes.home(lang));
   }
@@ -20,28 +31,26 @@ export default async function ParentDashboard({
   const dict = await getDictionary(lang);
 
   return (
-    <div className="container py-8">
-      <h1 className="text-3xl font-bold mb-6">{dict.parentPage.title}</h1>
-      <p className="text-muted-foreground mb-8">
-        {dict.parentPage.description}
-      </p>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">
-            {dict.parentPage.sections.progress}
-          </h2>
-        </div>
-        <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">
-            {dict.parentPage.sections.communications}
-          </h2>
-        </div>
-        <div className="p-6 bg-white rounded-lg shadow dark:bg-gray-800">
-          <h2 className="text-xl font-semibold mb-4">
-            {dict.parentPage.sections.events}
-          </h2>
-        </div>
-      </div>
-    </div>
+    <DashboardWrapper
+      title={dict.parentPage.title}
+      description={dict.parentPage.welcome}
+    >
+      <DashboardOverview dict={dict.parentPage.sections.dashboardOverview} />
+      <PerformanceTracking
+        dict={dict.parentPage.sections.performanceTracking}
+      />
+      <HomeworkTracking dict={dict.parentPage.sections.homeworkTracking} />
+      <Communication dict={dict.parentPage.sections.communication} />
+      <ChildSafetyAlerts dict={dict.parentPage.sections.childSafetyAlerts} />
+      <FeeManagement dict={dict.parentPage.sections.feeManagement} />
+      <ActivityLog dict={dict.parentPage.sections.activityLog} />
+      <ParentEngagement dict={dict.parentPage.sections.parentEngagement} />
+      <ResourceCenter dict={dict.parentPage.sections.resourceCenter} />
+      <ExtracurricularActivities
+        dict={dict.parentPage.sections.extracurricularActivities}
+      />
+      <HealthAndWellness dict={dict.parentPage.sections.healthAndWellness} />
+      <SchoolResources dict={dict.parentPage.sections.schoolResources} />
+    </DashboardWrapper>
   );
 }
