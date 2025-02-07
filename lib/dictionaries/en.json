@@ -557,7 +557,17 @@
           "addNewStudent": "Add New Student",
           "addNewTeacher": "Add New Teacher",
           "sendAnnouncement": "Send School Announcement",
-          "generateReport": "Generate School Report"
+          "generateReport": "Generate School Report",
+          "viewAttendanceSummary": "View Attendance Summary",
+          "managePendingFees": "Manage Pending Fees",
+          "scheduleEvent": "Schedule School Event",
+          "assignTaskToStaff": "Assign Task to Staff",
+          "monitorStudentPerformance": "Monitor Student Performance",
+          "approveLeaveRequests": "Approve Leave Requests",
+          "updateSchoolPolicies": "Update School Policies",
+          "viewParentFeedback": "View Parent Feedback",
+          "trackExtracurricularActivities": "Track Extracurricular Activities",
+          "sendEmergencyAlerts": "Send Emergency Alerts"
         }
       },
       "management": {
@@ -660,13 +670,13 @@
         "upcomingEvents": [
           {
             "name": "Annual Sports Day",
-            "date": "2023-11-20",
+            "date": "2025-11-20",
             "attendees": ["Students", "Parents", "Teachers"],
             "status": "Planned"
           },
           {
             "name": "Parent-Teacher Meeting",
-            "date": "2023-12-05",
+            "date": "2025-12-05",
             "attendees": ["Parents", "Teachers"],
             "status": "Scheduled"
           }

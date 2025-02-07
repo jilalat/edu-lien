@@ -553,7 +553,17 @@
           "addNewStudent": "إضافة طالب جديد",
           "addNewTeacher": "إضافة معلم جديد",
           "sendAnnouncement": "إرسال إعلان مدرسي",
-          "generateReport": "إنشاء تقرير مدرسي"
+          "generateReport": "إنشاء تقرير مدرسي",
+          "viewAttendanceSummary": "View Attendance Summary",
+          "managePendingFees": "Manage Pending Fees",
+          "scheduleEvent": "Schedule School Event",
+          "assignTaskToStaff": "Assign Task to Staff",
+          "monitorStudentPerformance": "Monitor Student Performance",
+          "approveLeaveRequests": "Approve Leave Requests",
+          "updateSchoolPolicies": "Update School Policies",
+          "viewParentFeedback": "View Parent Feedback",
+          "trackExtracurricularActivities": "Track Extracurricular Activities",
+          "sendEmergencyAlerts": "Send Emergency Alerts"
         }
       },
       "management": {
