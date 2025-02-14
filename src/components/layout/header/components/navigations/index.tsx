@@ -1,9 +1,10 @@
 'use client';
 
 import { routes } from '@/config/routes';
+import { langType } from '@/types';
 import Link from 'next/link';
 
-export function Navigation({ lang }: { lang: string }) {
+export function Navigation({ lang }: langType) {
   return (
     <ul className="flex gap-4">
       <li>

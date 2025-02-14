@@ -2,21 +2,14 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { getDictionary } from '@/helpers/getDictionary';
+import { langType } from '@/types';
 import { Eye, EyeOff } from 'lucide-react';
+import langData from './lang.json';
 import { useNewPasswordForm } from './logic';
+import * as styles from './style';
 
-interface NewPasswordFormProps {
-  dict: {
-    newPassword: {
-      newPasswordLabel: string;
-      confirmPasswordLabel: string;
-      submitButton: string;
-    };
-  };
-  lang: string;
-}
-
-export function NewPasswordForm({ dict, lang }: NewPasswordFormProps) {
+export function NewPasswordForm({ lang }: langType) {
   const {
     newPassword,
     setNewPassword,
@@ -30,12 +23,14 @@ export function NewPasswordForm({ dict, lang }: NewPasswordFormProps) {
     handleSubmit,
   } = useNewPasswordForm();
 
+  const dict = getDictionary(lang, langData);
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="relative">
+    <form onSubmit={handleSubmit} className={styles.formContainer}>
+      <div className={styles.passwordInputContainer}>
         <Input
           type={showNewPassword ? 'text' : 'password'}
-          placeholder={dict.newPassword.newPasswordLabel}
+          placeholder={dict.newPasswordLabel}
           value={newPassword}
           onChange={e => setNewPassword(e.target.value)}
           required
@@ -44,19 +39,19 @@ export function NewPasswordForm({ dict, lang }: NewPasswordFormProps) {
         <button
           type="button"
           onClick={() => setShowNewPassword(!showNewPassword)}
-          className="password-toggle absolute top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+          className={styles.passwordToggle}
         >
           {showNewPassword ? (
-            <Eye className="h-4 w-4" />
+            <Eye className={styles.iconSize} />
           ) : (
-            <EyeOff className="h-4 w-4" />
+            <EyeOff className={styles.iconSize} />
           )}
         </button>
       </div>
-      <div className="relative">
+      <div className={styles.passwordInputContainer}>
         <Input
           type={showConfirmPassword ? 'text' : 'password'}
-          placeholder={dict.newPassword.confirmPasswordLabel}
+          placeholder={dict.confirmPasswordLabel}
           value={confirmPassword}
           onChange={e => setConfirmPassword(e.target.value)}
           required
@@ -65,17 +60,21 @@ export function NewPasswordForm({ dict, lang }: NewPasswordFormProps) {
         <button
           type="button"
           onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-          className="password-toggle absolute top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+          className={styles.passwordToggle}
         >
           {showConfirmPassword ? (
-            <Eye className="h-4 w-4" />
+            <Eye className={styles.iconSize} />
           ) : (
-            <EyeOff className="h-4 w-4" />
+            <EyeOff className={styles.iconSize} />
           )}
         </button>
       </div>
-      <Button type="submit" className="w-full" disabled={isLoading}>
-        {isLoading ? 'Loading...' : dict.newPassword.submitButton}
+      <Button
+        type="submit"
+        className={styles.submitButton}
+        disabled={isLoading}
+      >
+        {isLoading ? 'Loading...' : dict.submitButton}
       </Button>
     </form>
   );

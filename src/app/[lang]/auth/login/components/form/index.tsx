@@ -4,30 +4,15 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { routes } from '@/config/routes';
+import { getDictionary } from '@/helpers/getDictionary';
 import { Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
+import langData from './lang.json';
 import { useLoginForm } from './logic';
+import { langType } from '@/types';
+import * as styles from './style';
 
-interface LoginFormProps {
-  dict: {
-    common: {
-      emailLabel: string;
-      backToHome: string;
-    };
-    login: {
-      title: string;
-      description: string;
-      identifierLabel: string;
-      passwordLabel: string;
-      rememberMe: string;
-      submitButton: string;
-      forgotPassword: string;
-    };
-  };
-  lang: string;
-}
-
-export function LoginForm({ dict, lang }: LoginFormProps) {
+export function LoginForm({ lang }: langType) {
   const {
     email,
     setEmail,
@@ -38,72 +23,75 @@ export function LoginForm({ dict, lang }: LoginFormProps) {
     rememberMe,
     setRememberMe,
     isLoading,
-    handleSubmit, // Use the handleSubmit function from the controller
+    handleSubmit,
   } = useLoginForm();
+
+  const dict = getDictionary(lang, langData);
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className={styles.formContainer}>
         <Input
           type="text"
-          placeholder={dict.login.identifierLabel}
+          placeholder={dict.emailLabel}
           value={email}
           onChange={e => setEmail(e.target.value)}
           required
           disabled={isLoading}
-          className="bg-background"
+          className={styles.inputField}
         />
-        <div className="relative">
+        <div className={styles.passwordContainer}>
           <Input
             type={showPassword ? 'text' : 'password'}
-            placeholder={dict.login.passwordLabel}
+            placeholder={dict.passwordLabel}
             value={password}
             onChange={e => setPassword(e.target.value)}
             required
             disabled={isLoading}
-            className="bg-background"
+            className={styles.inputField}
           />
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="password-toggle absolute top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+            className={styles.passwordToggle}
           >
             {showPassword ? (
-              <Eye className="h-4 w-4" />
+              <Eye className={styles.iconSize} />
             ) : (
-              <EyeOff className="h-4 w-4" />
+              <EyeOff className={styles.iconSize} />
             )}
           </button>
         </div>
         <Link
           href={routes.auth.forgotPassword(lang)}
-          className="text-sm text-primary hover:underline block text-right"
+          className={styles.forgotPasswordLink}
         >
-          {dict.login.forgotPassword}
+          {dict.forgotPassword}
         </Link>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2 rtl:space-x-reverse">
+        <div className={styles.rowWithActions}>
+          <div className={styles.checkboxWrapper}>
             <Checkbox
               id="rememberMe"
               checked={rememberMe}
               onCheckedChange={checked => setRememberMe(checked as boolean)}
             />
-            <label
-              htmlFor="rememberMe"
-              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-            >
-              {dict.login.rememberMe}
+            <label htmlFor="rememberMe" className={styles.checkboxLabel}>
+              {dict.rememberMe}
             </label>
           </div>
         </div>
 
-        <div className="flex gap-4">
-          <Button type="submit" className="flex-1" disabled={isLoading}>
-            {isLoading ? 'Loading...' : dict.login.submitButton}
+        <div className={styles.buttonGroup}>
+          <Button
+            type="submit"
+            className={styles.primaryButton}
+            disabled={isLoading}
+          >
+            {isLoading ? 'Loading...' : dict.submitButton}
           </Button>
-          <Link href={routes.home(lang)} className="flex-1">
-            <Button variant="outline" className="w-full">
-              {dict.common.backToHome}
+          <Link href={routes.home(lang)} className={styles.linkContainer}>
+            <Button variant="outline" className={styles.secondaryButton}>
+              {dict.backToHome}
             </Button>
           </Link>
         </div>

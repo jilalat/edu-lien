@@ -1,20 +1,17 @@
-import { getDictionary } from '@/lib/dictionary';
+import { getDictionary } from '@/helpers/getDictionary';
 import PageWrapper from '../components/page-wrapper';
 import { NewPasswordForm } from './components/form';
+import langData from './lang.json';
 
 export default async function NewPasswordPage({
   params: { lang },
 }: {
   params: { lang: string };
 }) {
-  const dict = await getDictionary(lang);
-
+  const dict = getDictionary(lang, langData);
   return (
-    <PageWrapper
-      title={dict.auth.newPassword.title}
-      description={dict.auth.newPassword.description}
-    >
-      <NewPasswordForm dict={dict.auth} lang={lang} />
+    <PageWrapper title={dict.welcomeMessage} description={dict.description}>
+      <NewPasswordForm lang={lang} />
     </PageWrapper>
   );
 }

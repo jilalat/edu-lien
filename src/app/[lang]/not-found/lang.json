@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Page not found",
+    "fr": "Page non trouvée",
+    "es": "Página no encontrada",
+    "ar": "الصفحة غير موجودة"
+  },
+  "description": {
+    "en": "Sorry, the page you are looking for does not exist.",
+    "fr": "Désolé, la page que vous recherchez n'existe pas.",
+    "es": "Lo sentimos, la página que estás buscando no existe.",
+    "ar": "عذرًا، الصفحة التي تبحث عنها غير موجودة."
+  },
+  "backToHome": {
+    "en": "Back to Home",
+    "fr": "Retour à l'accueil",
+    "es": "Volver al inicio",
+    "ar": "العودة إلى الصفحة الرئيسية"
+  }
+}

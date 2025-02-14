@@ -1,0 +1,14 @@
+{
+  "welcomeMessage": {
+    "en": "New password",
+    "fr": "Nouveau mot de passe",
+    "es": "Nueva contraseña",
+    "ar": "كلمة مرور جديدة"
+  },
+  "description": {
+    "en": "Create your new password",
+    "fr": "Créez votre nouveau mot de passe",
+    "es": "Crea tu nueva contraseña",
+    "ar": "إنشاء كلمة مرور جديدة"
+  }
+}

@@ -1,92 +1,14 @@
 {
-  "fr": {
-    "common": {
-      "emailLabel": "Adresse e-mail",
-      "backToLogin": "Retour à la connexion",
-      "backToHome": "Retour à l’accueil",
-      "resetButton": "Recevoir un lien"
-    },
-    "login": {
-      "welcomeMessage": "Bienvenue dans votre espace privé",
-      "description": "Connectez-vous à votre compte",
-      "identifierLabel": "Identifiant",
-      "passwordLabel": "Mot de passe",
-      "submitButton": "SE CONNECTER"
-    }
+  "welcomeMessage": {
+    "en": "Welcome to your private space",
+    "fr": "Bienvenue dans votre espace privé",
+    "es": "Bienvenido a tu espacio privado",
+    "ar": "مرحبًا بك في مساحتك الخاصة"
   },
-  "en": {
-    "common": {
-      "emailLabel": "Email",
-      "backToLogin": "Back to login",
-      "backToHome": "Back to Home",
-      "resetButton": "Receive a link"
-    },
-    "login": {
-      "welcomeMessage": "Welcome to your private space",
-      "description": "Sign in to your account",
-      "identifierLabel": "Identifier",
-      "passwordLabel": "Password",
-      "submitButton": "SIGN IN"
-    }
-  },
-  "ar": {
-    "common": {
-      "emailLabel": "البريد الإلكتروني",
-      "backToLogin": "العودة إلى تسجيل الدخول",
-      "backToHome": "العودة إلى الرئيسية",
-      "resetButton": "استلام رابط"
-    },
-    "login": {
-      "welcomeMessage": "مرحبًا بك في مساحتك الخاصة",
-      "welcomeDescription": "نظام معلومات متكامل يمكّن طرق إدارة المدرسة الجديدة.",
-      "title": "مرحبًا بك في مساحتك الخاصة",
-      "description": "تسجيل الدخول إلى حسابك",
-      "identifierLabel": "المعرف",
-      "passwordLabel": "كلمة المرور",
-      "rememberMe": "تذكرني",
-      "submitButton": "تسجيل دخول",
-      "forgotPassword": "نسيت كلمة المرور؟"
-    },
-    "forgotPassword": {
-      "title": "نسيت كلمة المرور",
-      "description": "أدخل بريدك الإلكتروني ل إعادة تعيين كلمة المرور"
-    },
-    "newPassword": {
-      "title": "كلمة مرور جديدة",
-      "description": "إنشاء كلمة مرور جديدة",
-      "newPasswordLabel": "كلمة مرور جديدة",
-      "confirmPasswordLabel": "تأكيد كلمة المرور",
-      "submitButton": "إعادة تعيين كلمة المرور"
-    }
-  },
-  "es": {
-    "common": {
-      "emailLabel": "Correo electrónico",
-      "backToLogin": "Volver al inicio de sesión",
-      "backToHome": "Volver al inicio",
-      "resetButton": "Recibir un enlace"
-    },
-    "login": {
-      "welcomeMessage": "Bienvenido a tu espacio privado",
-      "welcomeDescription": "Un sistema integrado de información que permite nuevos métodos de gestión escolar.",
-      "title": "Bienvenido a tu espacio privado",
-      "description": "Inicia sesión en tu cuenta",
-      "identifierLabel": "Identificador",
-      "passwordLabel": "Contraseña",
-      "rememberMe": "Mantenerme conectado",
-      "submitButton": "INICIAR SESIÓN",
-      "forgotPassword": "¿Olvidaste tu contraseña?"
-    },
-    "forgotPassword": {
-      "title": "Olvidé mi contraseña",
-      "description": "Ingresa tu correo electrónico para restablecer tu contraseña"
-    },
-    "newPassword": {
-      "title": "Nueva contraseña",
-      "description": "Crea tu nueva contraseña",
-      "newPasswordLabel": "Nueva contraseña",
-      "confirmPasswordLabel": "Confirmar contraseña",
-      "submitButton": "RESTABLECER CONTRASEÑA"
-    }
+  "description": {
+    "en": "Sign in to your account",
+    "fr": "Connectez-vous à votre compte",
+    "es": "Inicia sesión en tu cuenta",
+    "ar": "تسجيل الدخول إلى حسابك"
   }
 }

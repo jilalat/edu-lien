@@ -1,6 +1,6 @@
 'use client';
 
-import logo from '@/assets/images/logo.png';
+import logo from './logo.png';
 import { routes } from '@/config/routes';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,7 +20,7 @@ export function Logo({ dict, lang }: LogoProps) {
       title={dict.home}
     >
       <Image src={logo} alt="EduLien Logo" width={32} height={32} />
-      <span className="font-bold text-lg">EduLien</span>
+      <span className="font-bold text-lg">Effortness</span>
     </Link>
   );
 }

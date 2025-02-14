@@ -1,0 +1,14 @@
+{
+  "welcomeMessage": {
+    "en": "Forgot password",
+    "fr": "Mot de passe oublié",
+    "es": "Contraseña olvidada",
+    "ar": "نسيت كلمة المرور"
+  },
+  "description": {
+    "en": "Enter your email to reset your password",
+    "fr": "Entrez votre e-mail pour réinitialiser votre mot de passe",
+    "es": "Ingrese su correo electrónico para restablecer su contraseña",
+    "ar": "أدخل بريدك الإلكتروني لاستعادة كلمة المرور"
+  }
+}

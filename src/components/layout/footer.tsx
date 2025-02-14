@@ -2,9 +2,10 @@
 
 import { routes } from '@/config/routes';
 import { getDictionary } from '@/lib/dictionary';
+import { langType } from '@/types';
 import Link from 'next/link';
 
-export async function Footer({ lang }: { lang: string }) {
+export async function Footer({ lang }: langType) {
   const dict = await getDictionary(lang);
   return (
     <footer className="border-t border-gray-300 bg-background/95 backdrop-blur-md shadow-lg px-4">

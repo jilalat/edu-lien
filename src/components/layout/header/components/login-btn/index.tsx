@@ -11,7 +11,7 @@ interface LogInProps {
   lang: string;
 }
 
-export function LogIn({ dict, lang }: LogInProps) {
+export function LogInBtn({ dict, lang }: LogInProps) {
   return (
     <Link
       href={routes.auth.login(lang)}

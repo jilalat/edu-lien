@@ -1,0 +1,14 @@
+{
+  "welcomeMessage": {
+    "en": "Welcome to CV PAGE",
+    "fr": "Bienvenue sur la PAGE DE CV",
+    "es": "Bienvenido a la PÁGINA DE CV",
+    "ar": "مرحبًا بكم في صفحة السيرة الذاتية"
+  },
+  "description": {
+    "en": "Welcome back!",
+    "fr": "Bienvenue à nouveau !",
+    "es": "¡Bienvenido de nuevo!",
+    "ar": "مرحباً مرة أخرى!"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "emailLabel": {
+    "en": "Email",
+    "fr": "Adresse e-mail",
+    "es": "Correo electrónico",
+    "ar": "البريد الإلكتروني"
+  },
+  "resetButton": {
+    "en": "Recevoir un lien",
+    "fr": "Recevoir un lien",
+    "es": "Recibir un enlace",
+    "ar": "استلام رابط"
+  },
+  "backToLogin": {
+    "en": "Back to login",
+    "fr": "Retour à la connexion",
+    "es": "Volver al inicio de sesión",
+    "ar": "العودة إلى تسجيل الدخول"
+  }
+}
