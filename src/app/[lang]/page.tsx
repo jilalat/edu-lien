@@ -1,8 +1,8 @@
-import { FeaturesSection } from '@//components/home/features-section';
-import { routes } from '@//config/routes';
-import { getDictionary } from '@//lib/dictionary';
+import { FeaturesSection } from '@/components/home/features-section';
+import { routes } from '@/config/routes';
+import { getDictionary } from '@/lib/dictionary';
 import { redirect } from 'next/navigation';
-import { generateStaticParams } from '@//lib/dictionaries/static-params';
+import { generateStaticParams } from '@/lib/dictionaries/static-params';
 
 export { generateStaticParams };
 

@@ -1,13 +1,13 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const locales = ['en', 'fr', 'ar', 'es', 'ma'];
-const defaultLocale = 'fr';
+const locales = ['en', 'fr', 'ar', 'es'];
+const defaultLocale = 'en';
 
 function getLocale(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const pathnameLocale = locales.find(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
   return pathnameLocale || defaultLocale;
 }
@@ -17,7 +17,7 @@ export async function middleware(request: NextRequest) {
 
   // Handle locale redirect
   const pathnameIsMissingLocale = locales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+    locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
   if (pathnameIsMissingLocale) {
@@ -31,7 +31,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    '/((?!_next|assets|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)',
-  ],
+  matcher: ['/((?!_next|assets|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)'],
 };

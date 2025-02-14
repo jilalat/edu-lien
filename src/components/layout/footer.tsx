@@ -1,7 +1,7 @@
 'use client';
 
-import { routes } from '@//config/routes';
-import { getDictionary } from '@//lib/dictionary';
+import { routes } from '@/config/routes';
+import { getDictionary } from '@/lib/dictionary';
 import Link from 'next/link';
 
 export async function Footer({ lang }: { lang: string }) {

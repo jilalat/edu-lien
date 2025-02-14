@@ -1,7 +1,7 @@
 'use client';
 
 import logo from '@/assets/images/logo.png';
-import { routes } from '@//config/routes';
+import { routes } from '@/config/routes';
 import Image from 'next/image';
 import Link from 'next/link';
 

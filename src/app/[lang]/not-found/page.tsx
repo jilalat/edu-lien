@@ -1,7 +1,7 @@
-import { getDictionary } from '@//lib/dictionary';
+import { getDictionary } from '@/lib/dictionary';
 import Link from 'next/link';
-import { routes } from '@//config/routes';
-import { generateStaticParams } from '@//lib/dictionaries/static-params';
+import { routes } from '@/config/routes';
+import { generateStaticParams } from '@/lib/dictionaries/static-params';
 
 export { generateStaticParams };
 

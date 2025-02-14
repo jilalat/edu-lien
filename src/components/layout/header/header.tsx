@@ -1,6 +1,6 @@
 'use client';
 
-import { getDictionary } from '@//lib/dictionary';
+import { getDictionary } from '@/lib/dictionary';
 import { LanguageSelector } from './components/LanguageSelector';
 import { ThemeToggler } from './components/ThemeToggler';
 import { LogIn } from './components/logIn';

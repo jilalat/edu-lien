@@ -1,12 +1,12 @@
 'use client';
 
-import { Button } from '@//components/ui/button';
+import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@//components/ui/dropdown-menu';
+} from '@/components/ui/dropdown-menu';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 
@@ -14,10 +14,8 @@ import arFlag from '@/assets/images/ar-flag.png';
 import enFlag from '@/assets/images/en-flag.png';
 import esFlag from '@/assets/images/es-flag.png';
 import frFlag from '@/assets/images/fr-flag.png';
-import maFlag from '@/assets/images/ma-flag.png';
 
 const languages = [
-  { code: 'ma', name: 'الدارجة', flag: maFlag },
   { code: 'ar', name: 'العربية', flag: arFlag },
   { code: 'fr', name: 'Français', flag: frFlag },
   { code: 'en', name: 'English', flag: enFlag },

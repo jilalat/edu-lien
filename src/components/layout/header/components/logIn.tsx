@@ -1,6 +1,6 @@
 'use client';
 
-import { routes } from '@//config/routes';
+import { routes } from '@/config/routes';
 import { UserCircle2 } from 'lucide-react';
 import Link from 'next/link';
 
