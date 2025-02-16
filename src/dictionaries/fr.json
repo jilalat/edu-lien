@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "howItWorks": "Comment ça marche",
+    "features": "Fonctionnalités",
+    "testimonials": "Témoignages",
+    "templates": "Modèles",
+    "selectLanguage": "Choisir la langue"
+  },
+  "hero": {
+    "title": "Créez des Sites Web Magnifiques",
+    "subtitle": "Créez des sites web superbes et réactifs avec notre plateforme puissante",
+    "cta": "Commencer"
+  },
+  "howItWorks": {
+    "title": "Comment ça marche",
+    "steps": [
+      {
+        "title": "Choisissez un modèle",
+        "description": "Sélectionnez parmi notre collection de modèles professionnels"
+      },
+      {
+        "title": "Personnalisez",
+        "description": "Modifiez les couleurs, le contenu et la mise en page selon votre marque"
+      },
+      {
+        "title": "Lancez",
+        "description": "Publiez votre site web en un seul clic"
+      }
+    ]
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "subtitle": "Tout ce dont vous avez besoin pour créer des sites web exceptionnels",
+    "list": [
+      {
+        "title": "Design Responsive",
+        "description": "Superbe sur tous les appareils"
+      },
+      {
+        "title": "Optimisé SEO",
+        "description": "Conçu pour les moteurs de recherche"
+      },
+      {
+        "title": "Performance Rapide",
+        "description": "Temps de chargement ultra-rapides"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Ce que disent nos utilisateurs",
+    "list": [
+      {
+        "name": "Jean Dupont",
+        "role": "Designer",
+        "comment": "Le meilleur constructeur de sites web que j'ai utilisé !"
+      },
+      {
+        "name": "Marie Martin",
+        "role": "Développeuse",
+        "comment": "Incroyablement intuitif et puissant."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Modèles de Départ",
+    "subtitle": "Choisissez parmi notre collection de modèles",
+    "viewAll": "Voir tous les modèles"
+  }
+}

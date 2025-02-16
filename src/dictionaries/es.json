@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "howItWorks": "Cómo Funciona",
+    "features": "Características",
+    "testimonials": "Testimonios",
+    "templates": "Plantillas",
+    "selectLanguage": "Seleccionar Idioma"
+  },
+  "hero": {
+    "title": "Crea Sitios Web Hermosos",
+    "subtitle": "Crea sitios web impresionantes y responsivos con nuestra potente plataforma",
+    "cta": "Comenzar"
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "steps": [
+      {
+        "title": "Elige una Plantilla",
+        "description": "Selecciona entre nuestra colección de plantillas profesionales"
+      },
+      {
+        "title": "Personaliza",
+        "description": "Modifica colores, contenido y diseño para que coincida con tu marca"
+      },
+      {
+        "title": "Lanza",
+        "description": "Publica tu sitio web con un solo clic"
+      }
+    ]
+  },
+  "features": {
+    "title": "Características",
+    "subtitle": "Todo lo que necesitas para crear sitios web increíbles",
+    "list": [
+      {
+        "title": "Diseño Responsivo",
+        "description": "Se ve genial en todos los dispositivos"
+      },
+      {
+        "title": "Optimizado para SEO",
+        "description": "Construido pensando en los motores de búsqueda"
+      },
+      {
+        "title": "Rendimiento Rápido",
+        "description": "Tiempos de carga ultrarrápidos"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros usuarios",
+    "list": [
+      {
+        "name": "Juan Pérez",
+        "role": "Diseñador",
+        "comment": "¡El mejor constructor de sitios web que he usado!"
+      },
+      {
+        "name": "Ana García",
+        "role": "Desarrolladora",
+        "comment": "Increíblemente intuitivo y potente."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Plantillas Iniciales",
+    "subtitle": "Elige entre nuestra colección de plantillas",
+    "viewAll": "Ver Todas las Plantillas"
+  }
+}

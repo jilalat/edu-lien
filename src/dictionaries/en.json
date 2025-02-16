@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "howItWorks": "How It Works",
+    "features": "Features",
+    "testimonials": "Testimonials",
+    "templates": "Templates",
+    "selectLanguage": "Select Language"
+  },
+  "hero": {
+    "title": "Build Beautiful Websites",
+    "subtitle": "Create stunning, responsive websites with our powerful platform",
+    "cta": "Get Started"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "steps": [
+      {
+        "title": "Choose a Template",
+        "description": "Select from our collection of professionally designed templates"
+      },
+      {
+        "title": "Customize",
+        "description": "Modify colors, content, and layout to match your brand"
+      },
+      {
+        "title": "Launch",
+        "description": "Publish your website with just one click"
+      }
+    ]
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Everything you need to create amazing websites",
+    "list": [
+      {
+        "title": "Responsive Design",
+        "description": "Looks great on all devices"
+      },
+      {
+        "title": "SEO Optimized",
+        "description": "Built with search engines in mind"
+      },
+      {
+        "title": "Fast Performance",
+        "description": "Lightning-fast loading times"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "list": [
+      {
+        "name": "John Doe",
+        "role": "Designer",
+        "comment": "The best website builder I've ever used!"
+      },
+      {
+        "name": "Jane Smith",
+        "role": "Developer",
+        "comment": "Incredibly intuitive and powerful."
+      }
+    ]
+  },
+  "templates": {
+    "title": "Starting Templates",
+    "subtitle": "Choose from our collection of templates",
+    "viewAll": "View All Templates"
+  }
+}

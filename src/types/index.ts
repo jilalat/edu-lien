@@ -1,3 +1,3 @@
-export type langType {
+export type langType = {
   lang: string;
-}
+};

@@ -1,0 +1,25 @@
+{
+  "home": {
+    "en": "Home",
+    "es": "Inicio",
+    "zh": "首页",
+    "hi": "गृह",
+    "ar": "الصفحة الرئيسية",
+    "pt": "Página inicial",
+    "ru": "Главная",
+    "fr": "Accueil",
+    "ja": "ホーム",
+    "de": "Startseite",
+    "it": "Home",
+    "ko": "홈",
+    "tr": "Ana Sayfa",
+    "vi": "Trang chủ",
+    "pl": "Strona główna",
+    "id": "Beranda",
+    "nl": "Startpagina",
+    "ms": "Laman utama",
+    "th": "หน้าแรก",
+    "da": "Forside",
+    "sv": "Hem"
+  }
+}

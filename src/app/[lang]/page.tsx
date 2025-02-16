@@ -1,6 +1,9 @@
-import { FeaturesSection } from '@/components/home/features-section';
-import { generateStaticParams } from '@/lib/dictionaries/static-params';
-import { getDictionary } from '@/lib/dictionary';
+import { Hero } from '@/components/home/hero';
+import { HowItWorks } from '@/components/home/how-it-works';
+import { Features } from '@/components/home/features';
+import { Testimonials } from '@/components/home/testimonials';
+import { Templates } from '@/components/home/templates';
+import { generateStaticParams } from '@/helpers/static-params';
 
 export { generateStaticParams };
 
@@ -9,11 +12,13 @@ export default async function Home({
 }: {
   params: { lang: string };
 }) {
-  const dict = await getDictionary(lang);
-
   return (
-    <div className="flex flex-col">
-      <FeaturesSection dict={dict.homePage} />
-    </div>
+    <>
+      <Hero lang={lang} />
+      <HowItWorks lang={lang} />
+      <Features lang={lang} />
+      <Testimonials lang={lang} />
+      <Templates lang={lang} />
+    </>
   );
 }
